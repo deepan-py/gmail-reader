@@ -45,6 +45,17 @@ class User(Base):
         return db.query(cls).filter(cls.email == email).first()
 
 
+class UserLabel(Base):
+    __tablename__ = "user_labels"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False, index=True)
+    label_name: Mapped[str] = mapped_column(String, nullable=False, index=True)
+    created_at: Mapped[datetime.datetime] = mapped_column(
+        DateTime, nullable=False, default_factory=datetime.datetime.utcnow
+    )
+
+
 class Mail(Base):
     __tablename__ = "emails"
 

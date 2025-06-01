@@ -6,7 +6,7 @@ import logging
 import datetime
 import re
 from dataclasses import dataclass
-from gmail_reader.database.models import Mail
+from gmail_reader.database.models import Mail, UserLabel
 from typing import Optional, List, Dict, Any
 from sqlalchemy.orm import Session
 from googleapiclient.errors import HttpError
@@ -45,7 +45,32 @@ class MailService:
                 self.user.last_synced = mail.received_at or mail.sent_at
                 self.db.commit()
 
+    def create_labels(self) -> None:
+        available_labels = self.service.users().labels().list(userId="me").execute()
+        for label in available_labels.get("labels", []):
+            if label["name"].upper() in RESERVED_LABELS:
+                logging.warning(f"Skipping reserved label: {label['name']}")
+                continue
+            user_label = UserLabel(
+                id=label["id"],
+                user_id=self.user.id,
+                label_name=label["name"],
+                created_at=datetime.datetime.utcnow(),
+            )
+            existing_label = (
+                self.db.query(UserLabel)
+                .filter(UserLabel.id == user_label.id, UserLabel.user_id == self.user.id)
+                .first()
+            )
+            if not existing_label:
+                self.db.add(user_label)
+                logging.info(f"Label '{label['name']}' created for user {self.user.email}")
+            else:
+                logging.info(f"Label '{label['name']}' already exists for user {self.user.email}, skipping creation.")
+        self.db.commit()
+
     def _fetch_first_mails(self) -> None:
+        self.create_labels()
         messages = self.service.users().messages().list(userId="me", maxResults=500).execute()
         latest_message = None
         for message in messages.get("messages", []):
@@ -186,10 +211,14 @@ class Rule:
 
 
 class MailRuleExecution:
-    def __init__(self, rules_path: str, db: Session) -> None:
+    def __init__(self, rules_path: str, gmail_client: GmailClient) -> None:
         self.rules_path = rules_path
-        self.db = db
+        self.db = gmail_client.db
         self.rules: list[Rule] = self.load_rules()
+        self.service = gmail_client.service
+        self.user = gmail_client.user
+
+        self.label_map: dict[str, UserLabel] = {}
 
     def load_rules(self) -> List[Rule]:
         import json
@@ -214,8 +243,8 @@ class MailRuleExecution:
 
     @classmethod
     def validate_label(cls, label: str) -> None:
-        if not label or len(label) > 150:
-            raise ValueError(f"Label '{label}' is invalid. It must be non-empty and less than 150 characters.")
+        if not label or len(label) > 255:
+            raise ValueError(f"Label '{label}' is invalid. It must be non-empty and less than 255 characters.")
         if not LABEL_REGEX.match(label):
             raise ValueError(
                 f"Label '{label}' is invalid. It can only contain alphanumeric characters, hyphens, and underscores."
@@ -227,6 +256,7 @@ class MailRuleExecution:
             for action in rule.actions:
                 if action.type == EmailRuleActionType.MoveToFolder:
                     self.validate_label(action.value)
+                    self.label_map[action.value] = self.create_label(action.value)
                 elif action.type in [EmailRuleActionType.MarkAsRead, EmailRuleActionType.MarkAsUnread]:
                     continue
                 else:
@@ -437,11 +467,13 @@ class MailRuleExecution:
 
             logging.debug(f"Executing query: {query}")
             logging.debug(f"Params: {query.statement.compile().params}")
+            # add and condition to the query to filter by user ID
+            query = query.filter(Mail.user_id == self.user.id)
             mails = query.all()
             logging.info(f"Found {len(mails)} mails matching rule '{rule.name}'")
 
-            for mail in mails:
-                for action in rule.actions:
+            for action in rule.actions:
+                for mail in mails:
                     if action.type == EmailRuleActionType.MoveToFolder:
                         if not action.value:
                             logging.warning(f"No folder specified for action in rule '{rule.name}'")
@@ -450,19 +482,83 @@ class MailRuleExecution:
                         if action.value.upper() in RESERVED_LABELS:
                             logging.warning(f"Moving to special folder '{action.value}' is not supported, skipping.")
                             continue
-                        self.add_labels_to_mail(mail, action.value)
+                        if self.add_labels_to_mail(mail, self.label_map[action.value].id):
+                            self.add_label_to_mail(mail, self.label_map[action.value].id)
                     elif action.type == EmailRuleActionType.MarkAsRead:
-                        self.add_labels_to_mail(mail, "READ")
-                        self.remove_labels_from_mail(mail, "UNREAD")
+                        if self.remove_labels_from_mail(mail, "UNREAD"):
+                            self.mark_mail_as_read(mail)
                     elif action.type == EmailRuleActionType.MarkAsUnread:
-                        self.add_labels_to_mail(mail, "UNREAD")
-                        self.remove_labels_from_mail(mail, "READ")
+                        if self.add_labels_to_mail(mail, "UNREAD"):
+                            self.mark_mail_as_unread(mail)
                     else:
                         raise ValueError(f"Unsupported action type: {action.type} in rule '{rule.name}'")
-                logging.info(f"Applied actions for mail ID {mail.id} in rule '{rule.name}'")
+                logging.info(f"Executed actions for rule '{rule.name}' on {len(mails)} mails.")
         self.db.commit()
 
-    def add_labels_to_mail(self, mail: Mail, label: str) -> None:
+    def mark_mail_as_read(self, mail: Mail) -> None:
+        self.service.users().messages().modify(
+            userId="me",
+            id=mail.id,
+            body={"removeLabelIds": ["UNREAD"]},
+        ).execute()
+
+    def mark_mail_as_unread(self, mail: Mail) -> None:
+        self.service.users().messages().modify(
+            userId="me",
+            id=mail.id,
+            body={"addLabelIds": ["UNREAD"]},
+        ).execute()
+
+    def create_label(self, label: str) -> UserLabel:
+        self.validate_label(label)
+        existing_label = (
+            self.db.query(UserLabel).filter(UserLabel.label_name == label, UserLabel.user_id == self.user.id).first()
+        )
+        if existing_label:
+            logging.info(f"Label '{label}' already exists for user {self.user.email}, skipping creation.")
+            return existing_label
+
+        available_labels = self.service.users().labels().list(userId="me").execute()
+        id_of_label = None
+        for l in available_labels.get("labels", []):
+            if l["name"].lower() == label.lower():
+                id_of_label = l["id"]
+                logging.info(f"Label '{label}' already exists, skipping creation.")
+                break
+        else:
+            result = (
+                self.service.users()
+                .labels()
+                .create(
+                    userId="me",
+                    body={
+                        "name": label,
+                        "labelListVisibility": "labelShow",
+                        "messageListVisibility": "show",
+                    },
+                )
+                .execute()
+            )
+            id_of_label = result.get("id")
+        user_label = UserLabel(
+            id=id_of_label,
+            user_id=self.user.id,
+            label_name=label,
+            created_at=datetime.datetime.utcnow(),
+        )
+        self.db.add(user_label)
+        self.db.commit()
+        logging.info(f"Label '{label}' created for user {self.user.email}")
+        return user_label
+
+    def add_label_to_mail(self, mail: Mail, label: str) -> None:
+        self.service.users().messages().modify(
+            userId="me",
+            id=mail.id,
+            body={"addLabelIds": [label]},
+        ).execute()
+
+    def add_labels_to_mail(self, mail: Mail, label: str) -> bool:
         update_query = (
             f"UPDATE {Mail.__tablename__}"
             " SET labels = CASE"
@@ -472,7 +568,7 @@ class MailRuleExecution:
             " WHERE id = :mail_id"
             " AND (labels IS NULL OR array_position(labels, :label) IS NULL)"
         )
-        self.db.execute(
+        result = self.db.execute(
             text(update_query).bindparams(
                 label=label,
                 mail_id=mail.id,
@@ -480,8 +576,9 @@ class MailRuleExecution:
         )
         self.db.commit()
         logging.info(f"Label '{label}' added to mail ID {mail.id}")
+        return result.rowcount > 0
 
-    def remove_labels_from_mail(self, mail: Mail, label: str) -> None:
+    def remove_labels_from_mail(self, mail: Mail, label: str) -> bool:
         # Remove a label from the mail if it exists
         update_query = (
             f"UPDATE {Mail.__tablename__}"
@@ -490,7 +587,7 @@ class MailRuleExecution:
             " AND labels IS NOT NULL"
             " AND array_position(labels, :label) IS NOT NULL"
         )
-        self.db.execute(
+        result = self.db.execute(
             text(update_query).bindparams(
                 label=label,
                 mail_id=mail.id,
@@ -498,3 +595,4 @@ class MailRuleExecution:
         )
         self.db.commit()
         logging.info(f"Label '{label}' removed from mail ID {mail.id}")
+        return result.rowcount > 0

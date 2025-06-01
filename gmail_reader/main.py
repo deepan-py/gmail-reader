@@ -30,6 +30,11 @@ def main():
         action="store_true",
         help="Enable debug mode for more verbose logging",
     )
+    parser.add_argument(
+        "--refresh-token",
+        action="store_true",
+        help="Refresh the OAuth token for the Gmail API",
+    )
 
     subparsers = parser.add_subparsers(dest="command")
     subparsers.add_parser(
@@ -58,6 +63,19 @@ def main():
     rules_parser = subparsers.add_parser(
         "process-rules",
         help="Process email rules from a specified file",
+    )
+    rules_parser.add_argument(
+        "--email",
+        type=str,
+        required=True,
+        help="Email address to process rules for",
+    )
+    rules_parser.add_argument(
+        "--creds-file",
+        type=Path,
+        default=None,
+        required=True,
+        help="Path to the Google API credentials JSON file for authentication",
     )
     rules_parser.add_argument(
         "--rules-file",
@@ -92,6 +110,7 @@ def main():
             name=args.email.split("@")[0],  # Default name from email prefix
             creds_path=args.creds_file,
             db=init_db(),
+            refresh_token=args.refresh_token,
         )
         mail_service = MailService(gmail_client=gmail_client)
         mail_service.fetch_and_store_email()
@@ -99,9 +118,16 @@ def main():
     elif args.command == "process-rules":
         if not args.rules_file.is_file():
             raise FileNotFoundError(f"Rules file {args.rules_file} does not exist.")
+        gmail_client = GmailClient(
+            email=args.email,
+            name=args.email.split("@")[0],  # Default name from email prefix
+            creds_path=args.creds_file,
+            db=init_db(),
+            refresh_token=args.refresh_token,
+        )
         MailRuleExecution(
             rules_path=args.rules_file,
-            db=init_db(),
+            gmail_client=gmail_client,
         ).execute_rules()
         exit(0)
     else:

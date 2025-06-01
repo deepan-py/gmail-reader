@@ -1184,3 +1184,206 @@
 2025-06-01 22:08:12,194 - root - INFO - Label 'UNREAD' removed from mail ID 1967c332e2373339
 2025-06-01 22:08:12,207 - root - INFO - Label 'OLD_EMAILS' added to mail ID 1967c332e2373339
 2025-06-01 22:08:12,207 - root - INFO - Applied actions for mail ID 1967c332e2373339 in rule 'Test RECEIVED_AT_DELTA conditions'
+2025-06-02 00:08:35,625 - root - INFO - Database initialized successfully.
+2025-06-02 00:09:47,225 - google_auth_oauthlib.flow - INFO - "GET /?state=nILWcIe4w9FhmXViFRXstT6YiPRIrU&code=4/0AUJR-x49IrIfc5fJOYUBTYz10lkn4DULLPRwUCuBNqwTBy6Bqpt3n3rqGryUPAUqUjYH2A&scope=https://www.googleapis.com/auth/gmail.labels%20https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2025-06-02 00:09:47,504 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:09:49,914 - root - ERROR - Failed to parse mail content for message ID: 19729ce98eaf7429 {'id': '19729ce98eaf7429', 'threadId': '19729ce70bda5adf', 'labelIds': ['DRAFT'], 'snippet': 'draft', 'payload': {'partId': '', 'mimeType': 'multipart/alternative', 'filename': '', 'headers': [{'name': 'MIME-Version', 'value': '1.0'}, {'name': 'Date', 'value': 'Sun, 1 Jun 2025 10:14:54 +0530'}, {'name': 'Message-ID', 'value': '<CANxRH4Mkqi+9pzEJDgUuvo8OB4FRNsyhH5rE96GvwTyo78JsBg@mail.gmail.com>'}, {'name': 'Subject', 'value': 'test draft'}, {'name': 'From', 'value': 'Deepan Sankar <deepanabi.codes@gmail.com>'}, {'name': 'To', 'value': 'deepan.abi@outlook.com'}, {'name': 'Content-Type', 'value': 'multipart/alternative; boundary="000000000000030a0d06367b4fc1"'}], 'body': {'size': 0}, 'parts': [{'partId': '0', 'mimeType': 'text/plain', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/plain; charset="UTF-8"'}], 'body': {'size': 7, 'data': 'ZHJhZnQNCg=='}}, {'partId': '1', 'mimeType': 'text/html', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/html; charset="UTF-8"'}], 'body': {'size': 28, 'data': 'PGRpdiBkaXI9Imx0ciI-ZHJhZnQ8L2Rpdj4NCg=='}}]}, 'sizeEstimate': 541, 'historyId': '2086', 'internalDate': '1748753094000'}
+2025-06-02 00:09:52,786 - root - INFO - Latest fetched mail date set to: 2025-06-01 19:29:50 for user deepanabi.codes@gmail.com
+2025-06-02 00:11:07,921 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:11:07,933 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:11:07,937 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:11:07,942 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:11:09,576 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2025-06-02 00:13:54,843 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:13:54,852 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:13:54,856 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:13:54,860 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:13:55,364 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:13:55,670 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "insufficientPermissions"
+2025-06-02 00:16:05,145 - google_auth_oauthlib.flow - INFO - "GET /?state=XuOA5xDnIuS4Oxpz88TnYcDaYxZhqc&code=4/0AUJR-x6odTKxW9xLqH_Tdo-qY6k3_idrWbHxaHYJXYp8mQga8VYYsx_-bUfVBa6fSY5JKA&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:16:05,396 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:16:05,422 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:16:05,434 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:16:39,426 - google_auth_oauthlib.flow - INFO - "GET /?state=UptFV5Fq8ViOJGTgYy8TwUvWUo05ma&code=4/0AUJR-x7DXz6B_ylZ0wqL_eH9CFFRKKMoopEO1qD0SWsHJyn3i4RyMHB219ozAjeNVovJXw&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:16:39,631 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:16:39,651 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:16:39,659 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:16:39,664 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:16:39,664 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:16:39,673 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:16:39,678 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:16:39,678 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:16:39,685 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:16:39,692 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:16:40,235 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:19:36,518 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:19:36,528 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:36,534 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:19:36,538 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:19:36,538 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:36,544 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:19:36,548 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:19:36,548 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:36,555 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:19:36,560 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:19:36,561 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:45,113 - google_auth_oauthlib.flow - INFO - "GET /?state=1ALhio6nnwn6r1X0gxDHxQmXLxMd3j&code=4/0AUJR-x4NkcNSNr_yqyOh7ii6VADy7-vTPW109JIT7SAP631cbp_DGvxuBV-icf0JLUSXlA&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:19:45,351 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:19:45,363 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:45,367 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:19:45,370 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:19:45,370 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:45,374 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:19:45,376 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:19:45,376 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:19:45,378 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:19:45,380 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:19:45,380 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:21:33,634 - google_auth_oauthlib.flow - INFO - "GET /?state=giNoeB63id7IAkUwAsuq6AivpMji1x&code=4/0AUJR-x7LpDOjxNo2xgTUXh1IIZ2hX6bTzyEmdzQ3NEVbEuPSrA0hX6GiIpNLc78aeAJJ2g&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:21:33,853 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:21:33,871 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:21:33,877 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:21:34,439 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:21:34,837 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:23:57,065 - google_auth_oauthlib.flow - INFO - "GET /?state=rSM8YexnJyJdxZPtVpwRUMXEIKUJxw&code=4/0AUJR-x61oNRZ5PYvvy8gsGUXbiECWZWzB4eyXE-jD3SCQFOrCo2XzBWUxrvH2RkxS7LT-w&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:23:57,313 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:23:57,322 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:23:57,327 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:23:58,424 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:23:58,812 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:25:15,072 - google_auth_oauthlib.flow - INFO - "GET /?state=u4NRwdvhE1lTFukiCdNNppC8oLJvUt&code=4/0AUJR-x4GwxLJO_ZoqZWJlo_VzP7QHv1pDNpR2hvzOQbxxW2_WQfygHFhFMMjoD_WXmdGgA&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:25:15,293 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:25:15,313 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:25:15,323 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:25:15,832 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:25:16,231 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:26:35,032 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:26:35,047 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:26:35,055 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:26:35,599 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:29:15,245 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:29:15,256 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:29:15,264 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:29:15,809 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:29:29,371 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:29:29,381 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:29:29,388 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:29:30,504 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:29:31,414 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:29:31,824 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:29:31,835 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:29:32,196 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:29:32,505 - root - INFO - Label 'TEST_FOLDER' already exists, skipping creation.
+2025-06-02 00:29:32,950 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:29:32,958 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:29:32,962 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:29:32,963 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:31:11,745 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:31:11,754 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:31:11,757 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:31:11,759 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:31:11,759 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:31:11,761 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:31:11,762 - root - INFO - Label 'TEST_FOLDER' added to mail ID 19729ced31129b6e
+2025-06-02 00:31:11,762 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:31:11,764 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:31:11,766 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972a30aacd19321
+2025-06-02 00:31:11,766 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:32:47,320 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:46:49,037 - root - INFO - Database initialized successfully.
+2025-06-02 00:47:26,570 - google_auth_oauthlib.flow - INFO - "GET /?state=wsB0yitLAL0ttr9P9cToIWsuTralBg&code=4/0AUJR-x6yN6aN6Zp_90SaPRIhAJ2SOnl1VOVV1WxUXl7Rd3k5sVrq2o_W84MKnuB7GApQQA&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:47:26,819 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:47:27,900 - root - INFO - Label 'CHAT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,900 - root - WARNING - Skipping reserved label: SENT
+2025-06-02 00:47:27,901 - root - WARNING - Skipping reserved label: INBOX
+2025-06-02 00:47:27,906 - root - INFO - Label 'IMPORTANT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,906 - root - WARNING - Skipping reserved label: TRASH
+2025-06-02 00:47:27,910 - root - INFO - Label 'DRAFT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,910 - root - WARNING - Skipping reserved label: SPAM
+2025-06-02 00:47:27,913 - root - INFO - Label 'CATEGORY_FORUMS' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,916 - root - INFO - Label 'CATEGORY_UPDATES' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,919 - root - INFO - Label 'CATEGORY_PERSONAL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,923 - root - INFO - Label 'CATEGORY_PROMOTIONS' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,926 - root - INFO - Label 'CATEGORY_SOCIAL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,929 - root - INFO - Label 'STARRED' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:27,929 - root - WARNING - Skipping reserved label: UNREAD
+2025-06-02 00:47:27,931 - root - INFO - Label 'TEST_FOLDER' created for user deepanabi.codes@gmail.com
+2025-06-02 00:47:31,883 - root - ERROR - Failed to parse mail content for message ID: 19729ce98eaf7429 {'id': '19729ce98eaf7429', 'threadId': '19729ce70bda5adf', 'labelIds': ['DRAFT'], 'snippet': 'draft', 'payload': {'partId': '', 'mimeType': 'multipart/alternative', 'filename': '', 'headers': [{'name': 'MIME-Version', 'value': '1.0'}, {'name': 'Date', 'value': 'Sun, 1 Jun 2025 10:14:54 +0530'}, {'name': 'Message-ID', 'value': '<CANxRH4Mkqi+9pzEJDgUuvo8OB4FRNsyhH5rE96GvwTyo78JsBg@mail.gmail.com>'}, {'name': 'Subject', 'value': 'test draft'}, {'name': 'From', 'value': 'Deepan Sankar <deepanabi.codes@gmail.com>'}, {'name': 'To', 'value': 'deepan.abi@outlook.com'}, {'name': 'Content-Type', 'value': 'multipart/alternative; boundary="000000000000030a0d06367b4fc1"'}], 'body': {'size': 0}, 'parts': [{'partId': '0', 'mimeType': 'text/plain', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/plain; charset="UTF-8"'}], 'body': {'size': 7, 'data': 'ZHJhZnQNCg=='}}, {'partId': '1', 'mimeType': 'text/html', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/html; charset="UTF-8"'}], 'body': {'size': 28, 'data': 'PGRpdiBkaXI9Imx0ciI-ZHJhZnQ8L2Rpdj4NCg=='}}]}, 'sizeEstimate': 541, 'historyId': '2086', 'internalDate': '1748753094000'}
+2025-06-02 00:47:35,377 - root - INFO - Latest fetched mail date set to: 2025-06-02 00:16:39 for user deepanabi.codes@gmail.com
+2025-06-02 00:48:53,698 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:48:53,709 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:48:53,716 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:49:13,106 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:49:13,115 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:49:13,121 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:49:14,399 - root - INFO - Label 'TEST_LABEL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:49:14,411 - root - INFO - Label 'Label_3' added to mail ID 1972a30aacd19321
+2025-06-02 00:49:14,797 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:49:14,808 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:49:15,210 - root - INFO - Label 'TEST_LABEL' already exists for user deepanabi.codes@gmail.com, skipping creation.
+2025-06-02 00:49:15,218 - root - INFO - Label 'Label_3' added to mail ID 19729ced31129b6e
+2025-06-02 00:49:15,568 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:49:15,575 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:49:15,579 - root - INFO - Label 'TEST_LABEL' already exists for user deepanabi.codes@gmail.com, skipping creation.
+2025-06-02 00:49:15,586 - root - INFO - Label 'Label_3' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:49:16,025 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:51:40,830 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:51:42,202 - root - INFO - Label 'CRAZY_IMPORTANT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:51:42,210 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:51:42,216 - root - INFO - Label 'UNREAD' added to mail ID 1972a30aacd19321
+2025-06-02 00:51:42,220 - root - INFO - Label 'Label_4' added to mail ID 1972a30aacd19321
+2025-06-02 00:51:42,571 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:51:42,575 - root - INFO - Label 'UNREAD' added to mail ID 19729ced31129b6e
+2025-06-02 00:51:42,581 - root - INFO - Label 'Label_4' added to mail ID 19729ced31129b6e
+2025-06-02 00:51:42,929 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:51:42,936 - root - INFO - Label 'UNREAD' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:51:42,944 - root - INFO - Label 'Label_4' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:51:43,386 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:52:04,588 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:52:06,033 - root - INFO - Label 'NOT_CRAZY' created for user deepanabi.codes@gmail.com
+2025-06-02 00:52:06,040 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:52:06,048 - root - INFO - Label 'Label_5' added to mail ID 1972a30aacd19321
+2025-06-02 00:52:07,044 - root - INFO - Applied actions for mail ID 1972a30aacd19321 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:52:07,055 - root - INFO - Label 'Label_5' added to mail ID 19729ced31129b6e
+2025-06-02 00:52:07,975 - root - INFO - Applied actions for mail ID 19729ced31129b6e in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:52:07,986 - root - INFO - Label 'Label_5' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:52:08,987 - root - INFO - Applied actions for mail ID 1972bcaa9626cf16 in rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:53:30,213 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:53:36,088 - root - INFO - Label 'NOT_CRAZY_1' created for user deepanabi.codes@gmail.com
+2025-06-02 00:53:36,097 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 00:53:36,108 - root - INFO - Label 'Label_6' added to mail ID 1972a30aacd19321
+2025-06-02 00:53:36,555 - root - INFO - Label 'Label_6' added to mail ID 19729ced31129b6e
+2025-06-02 00:53:36,963 - root - INFO - Label 'Label_6' added to mail ID 1972bcaa9626cf16
+2025-06-02 00:53:37,364 - root - INFO - Executed actions for rule 'Test RECEIVED_AT conditions' on 3 mails.
+2025-06-02 00:58:22,153 - root - WARNING - No command provided. Use 'init-db' to initialize the database.
+2025-06-02 00:58:40,879 - root - INFO - Database initialized successfully.
+2025-06-02 00:59:24,433 - google_auth_oauthlib.flow - INFO - "GET /?state=eMMIsOzKEecLGegLK0EEShWCyrTjdH&code=4/0AUJR-x5j3UgAHCtWccSbmoN6gmaikZv0bQe2gwMlECtim5i_htXzXrGjr1piyCdhmokx3A&scope=https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2025-06-02 00:59:24,696 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 00:59:25,335 - root - INFO - Label 'CHAT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,335 - root - WARNING - Skipping reserved label: SENT
+2025-06-02 00:59:25,335 - root - WARNING - Skipping reserved label: INBOX
+2025-06-02 00:59:25,345 - root - INFO - Label 'IMPORTANT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,346 - root - WARNING - Skipping reserved label: TRASH
+2025-06-02 00:59:25,352 - root - INFO - Label 'DRAFT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,352 - root - WARNING - Skipping reserved label: SPAM
+2025-06-02 00:59:25,358 - root - INFO - Label 'CATEGORY_FORUMS' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,364 - root - INFO - Label 'CATEGORY_UPDATES' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,370 - root - INFO - Label 'CATEGORY_PERSONAL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,377 - root - INFO - Label 'CATEGORY_PROMOTIONS' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,383 - root - INFO - Label 'CATEGORY_SOCIAL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,390 - root - INFO - Label 'STARRED' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,391 - root - WARNING - Skipping reserved label: UNREAD
+2025-06-02 00:59:25,399 - root - INFO - Label 'TEST_FOLDER' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,407 - root - INFO - Label 'TEST_LABEL' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,411 - root - INFO - Label 'CRAZY_IMPORTANT' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,418 - root - INFO - Label 'NOT_CRAZY' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:25,426 - root - INFO - Label 'NOT_CRAZY_1' created for user deepanabi.codes@gmail.com
+2025-06-02 00:59:29,834 - root - ERROR - Failed to parse mail content for message ID: 19729ce98eaf7429 {'id': '19729ce98eaf7429', 'threadId': '19729ce70bda5adf', 'labelIds': ['DRAFT'], 'snippet': 'draft', 'payload': {'partId': '', 'mimeType': 'multipart/alternative', 'filename': '', 'headers': [{'name': 'MIME-Version', 'value': '1.0'}, {'name': 'Date', 'value': 'Sun, 1 Jun 2025 10:14:54 +0530'}, {'name': 'Message-ID', 'value': '<CANxRH4Mkqi+9pzEJDgUuvo8OB4FRNsyhH5rE96GvwTyo78JsBg@mail.gmail.com>'}, {'name': 'Subject', 'value': 'test draft'}, {'name': 'From', 'value': 'Deepan Sankar <deepanabi.codes@gmail.com>'}, {'name': 'To', 'value': 'deepan.abi@outlook.com'}, {'name': 'Content-Type', 'value': 'multipart/alternative; boundary="000000000000030a0d06367b4fc1"'}], 'body': {'size': 0}, 'parts': [{'partId': '0', 'mimeType': 'text/plain', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/plain; charset="UTF-8"'}], 'body': {'size': 7, 'data': 'ZHJhZnQNCg=='}}, {'partId': '1', 'mimeType': 'text/html', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/html; charset="UTF-8"'}], 'body': {'size': 28, 'data': 'PGRpdiBkaXI9Imx0ciI-ZHJhZnQ8L2Rpdj4NCg=='}}]}, 'sizeEstimate': 541, 'historyId': '2086', 'internalDate': '1748753094000'}
+2025-06-02 00:59:34,757 - root - INFO - Latest fetched mail date set to: 2025-06-02 00:16:39 for user deepanabi.codes@gmail.com
+2025-06-02 01:02:08,825 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-02 01:02:09,797 - root - INFO - Label 'AFTER_JUNE_1_2025_BEFORE_JUNE_2_2025' created for user deepanabi.codes@gmail.com
+2025-06-02 01:02:09,806 - root - INFO - Found 3 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-02 01:02:09,818 - root - INFO - Label 'Label_7' added to mail ID 1972bcaa9626cf16
+2025-06-02 01:02:10,207 - root - INFO - Label 'Label_7' added to mail ID 1972a30aacd19321
+2025-06-02 01:02:11,165 - root - INFO - Label 'Label_7' added to mail ID 19729ced31129b6e
+2025-06-02 01:02:11,521 - root - INFO - Executed actions for rule 'Test RECEIVED_AT conditions' on 3 mails.

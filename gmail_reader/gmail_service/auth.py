@@ -18,25 +18,25 @@ if TYPE_CHECKING:
 
 class GmailClient:
     # OAuth 2.0 scopes for Gmail API
-    SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+    SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]
 
-    def __init__(self, email: str, name: str, db: Session, creds_path: Optional[Path] = None) -> None:
+    def __init__(self, email: str, name: str, db: Session, creds_path: Optional[Path] = None, refresh_token: bool = False) -> None:
         self.email = email.strip().lower()
         self.name = name.strip()
         self.db = db
         self.creds_path = creds_path
         self.service = None
         self.user = None
-        if not self.setup_user_client():
+        if not self.setup_user_client(refresh_token=refresh_token):
             raise ValueError("Failed to set up Gmail client. Please check your credentials or configuration.")
 
-    def setup_user_client(self) -> bool:
+    def setup_user_client(self, refresh_token: bool = False) -> bool:
         user = User.from_email(self.email, self.db)
         if not user:
             user = User(email=self.email, name=self.name, gmail_token=None)
         creds = None
         try:
-            if user.gmail_token:
+            if user.gmail_token and not refresh_token:
                 gmail_token = json.loads(user.gmail_token)
                 creds = Credentials.from_authorized_user_info(gmail_token, self.SCOPES)
             if creds and creds.expired and creds.refresh_token:

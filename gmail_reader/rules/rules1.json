@@ -17,11 +17,8 @@
             ],
             "actions": [
                 {
-                    "type": "mark_as_unread"
-                },
-                {
                     "type": "move_to_folder",
-                    "value": "TEST_FOLDER"
+                    "value": "AFTER_JUNE_1_2025_BEFORE_JUNE_2_2025"
                 }
             ]
         }

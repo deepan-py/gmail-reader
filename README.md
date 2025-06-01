@@ -29,22 +29,23 @@ A Python application that reads and processes Gmail messages using the Gmail API
    - Download the `credentials.json` file
 7. Place the `credentials.json` file in the `creds` directory of your project
 8. Go to "Data Access" tab and select "Add or Remove Scopes":
-   - Add the scope `https://www.googleapis.com/auth/gmail.readonly`
+   - Add the scope `https://www.googleapis.com/auth/gmail.modify` to allow reading and modifying emails
    - Save the changes
 
 ![Gmail Scope](./assets/gmail-scope.png)
-
 
 ## Setup and Installation
 
 1. Clone this repository
 2. Create and activate a virtual environment:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install --upgrade pip
 pip install wheel setuptools
@@ -53,11 +54,13 @@ pip install -e .
 ```
 
 4. Set up the database:
+
 ```bash
 docker compose up -d
 ```
 
 5. Configure environment:
+
 ```bash
 cp sample.env gmail_reader/.env
 ```
@@ -65,17 +68,20 @@ cp sample.env gmail_reader/.env
 ## Usage
 
 1. View available commands:
+
 ```bash
 cd gmail_reader
 python main.py --help
 ```
 
 2. Initialize the database:
+
 ```bash
 python main.py init-db
 ```
 
 3. Fetch emails:
+
 ```bash
 python main.py update-mails --email "your.email@gmail.com" --creds-file creds/credentials.json
 ```
@@ -85,19 +91,14 @@ python main.py update-mails --email "your.email@gmail.com" --creds-file creds/cr
 You can process rules using JSON files from the `rules` directory:
 
 ```bash
-python main.py process-rules --rules rules/rules1.json
+python main.py process-rules --rules rules/rules1.json --email "your.email@gmail.com" --creds-file creds/credentials.json
 ```
-
-Example output:
-![Execution-1](./assets/execution-1.png)
 
 Try another rule:
-```bash
-python main.py process-rules --rules rules/rules.json
-```
 
-Example output:
-![Execution-2](./assets/execution-2.png)
+```bash
+python main.py process-rules --rules rules/rules.json --email "your.email@gmail.com" --creds-file creds/credentials.json
+```
 
 ## Technical Details
 
@@ -119,6 +120,7 @@ gmail_reader/
 ```
 
 ## Problems with the implementation
+
 - Memory issue as the number of emails increases
 - The application may not handle large datasets efficiently due to the way it processes emails in memory.
 - Transaction label update not implemented
