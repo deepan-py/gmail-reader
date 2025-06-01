@@ -1,0 +1,29 @@
+{
+    "rules": [
+        {
+            "name": "Test RECEIVED_AT conditions",
+            "match_type": "all",
+            "conditions": [
+                {
+                    "type": "received_at",
+                    "check": "greater_than",
+                    "value": "2025-06-01T00:00:00"
+                },
+                {
+                    "type": "received_at",
+                    "check": "less_than",
+                    "value": "2025-06-02T00:00:00"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                },
+                {
+                    "type": "move_to_folder",
+                    "value": "TEST_FOLDER"
+                }
+            ]
+        }
+    ]
+}

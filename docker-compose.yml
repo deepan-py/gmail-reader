@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=gmail_filter
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - gmail_filter_network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  gmail_filter_network:
+    driver: bridge

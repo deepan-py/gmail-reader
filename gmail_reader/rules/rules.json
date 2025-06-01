@@ -1,0 +1,187 @@
+{
+    "rules": [
+        {
+            "name": "Test FROM conditions",
+            "match_type": "any",
+            "conditions": [
+                {
+                    "type": "from",
+                    "check": "equals",
+                    "value": "no-reply@accounts.google.com"
+                },
+                {
+                    "type": "from",
+                    "check": "contains",
+                    "value": "google.com"
+                },
+                {
+                    "type": "from",
+                    "check": "not_contains",
+                    "value": "outlook.com"
+                },
+                {
+                    "type": "from",
+                    "check": "not_equals",
+                    "value": "test@example.com"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_read"
+                },
+                {
+                    "type": "move_to_folder",
+                    "value": "CATEGORY_UPDATES"
+                }
+            ]
+        },
+        {
+            "name": "Test TO conditions",
+            "match_type": "all",
+            "conditions": [
+                {
+                    "type": "to",
+                    "check": "equals",
+                    "value": "deepanmail4@gmail.com"
+                },
+                {
+                    "type": "to",
+                    "check": "contains",
+                    "value": "gmail.com"
+                },
+                {
+                    "type": "to",
+                    "check": "not_contains",
+                    "value": "outlook.com"
+                },
+                {
+                    "type": "to",
+                    "check": "not_equals",
+                    "value": "test@example.com"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "move_to_folder",
+                    "value": "CATEGORY_PERSONAL"
+                }
+            ]
+        },
+        {
+            "name": "Test SUBJECT conditions",
+            "match_type": "any",
+            "conditions": [
+                {
+                    "type": "subject",
+                    "check": "equals",
+                    "value": "Security alert"
+                },
+                {
+                    "type": "subject",
+                    "check": "contains",
+                    "value": "Google"
+                },
+                {
+                    "type": "subject",
+                    "check": "not_contains",
+                    "value": "Spam"
+                },
+                {
+                    "type": "subject",
+                    "check": "not_equals",
+                    "value": "Unused Subject"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                },
+                {
+                    "type": "move_to_folder",
+                    "value": "SUBJECT_ANY"
+                }
+            ]
+        },
+        {
+            "name": "Test BODY conditions",
+            "match_type": "all",
+            "conditions": [
+                {
+                    "type": "body",
+                    "check": "contains",
+                    "value": "Google Account"
+                },
+                {
+                    "type": "body",
+                    "check": "not_contains",
+                    "value": "unsubscribe"
+                },
+                {
+                    "type": "body",
+                    "check": "equals",
+                    "value": "Test exact body match"
+                },
+                {
+                    "type": "body",
+                    "check": "not_equals",
+                    "value": "Unused body text"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_read"
+                }
+            ]
+        },
+        {
+            "name": "Test RECEIVED_AT conditions",
+            "match_type": "all",
+            "conditions": [
+                {
+                    "type": "received_at",
+                    "check": "greater_than",
+                    "value": "2025-06-01T00:00:00"
+                },
+                {
+                    "type": "received_at",
+                    "check": "less_than",
+                    "value": "2025-06-02T00:00:00"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_unread"
+                },
+                {
+                    "type": "move_to_folder",
+                    "value": "IMPORTANT"
+                }
+            ]
+        },
+        {
+            "name": "Test RECEIVED_AT_DELTA conditions",
+            "match_type": "all",
+            "conditions": [
+                {
+                    "type": "received_at_delta",
+                    "check": "greater_than",
+                    "value": "30 days"
+                },
+                {
+                    "type": "received_at_delta",
+                    "check": "less_than",
+                    "value": "2 months"
+                }
+            ],
+            "actions": [
+                {
+                    "type": "mark_as_read"
+                },
+                {
+                    "type": "move_to_folder",
+                    "value": "OLD_EMAILS"
+                }
+            ]
+        }
+    ]
+}

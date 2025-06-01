@@ -1,0 +1,1186 @@
+2025-06-01 22:03:15,642 - root - INFO - Database initialized successfully.
+2025-06-01 22:04:00,946 - google_auth_oauthlib.flow - INFO - "GET /?state=ccDWjldnxwXupqWgRfae4ubGuCy9XH&code=4/0AUJR-x6BTP5K6wsEQjcJMsRNUun3d1YGT2RzloYrPSLgoszyS9SIhHOgVeJxINRGtdk8dw&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2025-06-01 22:04:01,250 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-01 22:04:02,393 - root - ERROR - Failed to parse mail content for message ID: 1972c3cf175039b6 {'id': '1972c3cf175039b6', 'threadId': '1972c3cf175039b6', 'labelIds': ['DRAFT'], 'snippet': 'Something in draft', 'payload': {'partId': '', 'mimeType': 'multipart/alternative', 'filename': '', 'headers': [{'name': 'MIME-Version', 'value': '1.0'}, {'name': 'Date', 'value': 'Sun, 1 Jun 2025 21:34:40 +0530'}, {'name': 'Message-ID', 'value': '<CALrWUA3Q9CGPDRV4ZX2U3aDgG6tGvdcjAftq-1Sh+k9i=39T+w@mail.gmail.com>'}, {'name': 'Subject', 'value': ''}, {'name': 'From', 'value': 'Deepan Sankar <deepanmail4@gmail.com>'}, {'name': 'Content-Type', 'value': 'multipart/alternative; boundary="0000000000000f2691063684ce50"'}], 'body': {'size': 0}, 'parts': [{'partId': '0', 'mimeType': 'text/plain', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/plain; charset="UTF-8"'}], 'body': {'size': 20, 'data': 'U29tZXRoaW5nIGluIGRyYWZ0DQo='}}, {'partId': '1', 'mimeType': 'text/html', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/html; charset="UTF-8"'}], 'body': {'size': 41, 'data': 'PGRpdiBkaXI9Imx0ciI-U29tZXRoaW5nIGluIGRyYWZ0PC9kaXY-DQo='}}]}, 'sizeEstimate': 525, 'historyId': '585713', 'internalDate': '1748793880000'}
+2025-06-01 22:05:02,692 - root - INFO - Latest fetched mail date set to: 2025-06-01 21:34:40 for user deepanmail4@gmail.com
+2025-06-01 22:05:31,273 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-01 22:05:32,097 - root - ERROR - Failed to parse mail content for message ID: 1972c3cf175039b6 {'id': '1972c3cf175039b6', 'threadId': '1972c3cf175039b6', 'labelIds': ['DRAFT'], 'snippet': 'Something in draft', 'payload': {'partId': '', 'mimeType': 'multipart/alternative', 'filename': '', 'headers': [{'name': 'MIME-Version', 'value': '1.0'}, {'name': 'Date', 'value': 'Sun, 1 Jun 2025 21:34:40 +0530'}, {'name': 'Message-ID', 'value': '<CALrWUA3Q9CGPDRV4ZX2U3aDgG6tGvdcjAftq-1Sh+k9i=39T+w@mail.gmail.com>'}, {'name': 'Subject', 'value': ''}, {'name': 'From', 'value': 'Deepan Sankar <deepanmail4@gmail.com>'}, {'name': 'Content-Type', 'value': 'multipart/alternative; boundary="0000000000000f2691063684ce50"'}], 'body': {'size': 0}, 'parts': [{'partId': '0', 'mimeType': 'text/plain', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/plain; charset="UTF-8"'}], 'body': {'size': 20, 'data': 'U29tZXRoaW5nIGluIGRyYWZ0DQo='}}, {'partId': '1', 'mimeType': 'text/html', 'filename': '', 'headers': [{'name': 'Content-Type', 'value': 'text/html; charset="UTF-8"'}], 'body': {'size': 41, 'data': 'PGRpdiBkaXI9Imx0ciI-U29tZXRoaW5nIGluIGRyYWZ0PC9kaXY-DQo='}}]}, 'sizeEstimate': 525, 'historyId': '585713', 'internalDate': '1748793880000'}
+2025-06-01 22:06:37,350 - root - INFO - Found 4 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:06:37,352 - root - INFO - Label 'UNREAD' added to mail ID 1972c255e2cb0846
+2025-06-01 22:06:37,354 - root - INFO - Label 'READ' removed from mail ID 1972c255e2cb0846
+2025-06-01 22:06:37,359 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972c255e2cb0846
+2025-06-01 22:06:37,359 - root - INFO - Applied actions for mail ID 1972c255e2cb0846 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:06:37,361 - root - INFO - Label 'UNREAD' added to mail ID 1972c2150a7856e8
+2025-06-01 22:06:37,363 - root - INFO - Label 'READ' removed from mail ID 1972c2150a7856e8
+2025-06-01 22:06:37,366 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972c2150a7856e8
+2025-06-01 22:06:37,366 - root - INFO - Applied actions for mail ID 1972c2150a7856e8 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:06:37,368 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2e886dfef
+2025-06-01 22:06:37,369 - root - INFO - Label 'READ' removed from mail ID 1972bef2e886dfef
+2025-06-01 22:06:37,371 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bef2e886dfef
+2025-06-01 22:06:37,371 - root - INFO - Applied actions for mail ID 1972bef2e886dfef in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:06:37,372 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2a3020303
+2025-06-01 22:06:37,373 - root - INFO - Label 'READ' removed from mail ID 1972bef2a3020303
+2025-06-01 22:06:37,375 - root - INFO - Label 'TEST_FOLDER' added to mail ID 1972bef2a3020303
+2025-06-01 22:06:37,375 - root - INFO - Applied actions for mail ID 1972bef2a3020303 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:04,421 - root - INFO - Found 142 mails matching rule 'Test FROM conditions'
+2025-06-01 22:08:04,424 - root - INFO - Label 'READ' added to mail ID 1967c332e2373339
+2025-06-01 22:08:04,426 - root - INFO - Label 'UNREAD' removed from mail ID 1967c332e2373339
+2025-06-01 22:08:04,431 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1967c332e2373339
+2025-06-01 22:08:04,431 - root - INFO - Applied actions for mail ID 1967c332e2373339 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,432 - root - INFO - Label 'READ' added to mail ID 1928dc7dd58de88c
+2025-06-01 22:08:04,434 - root - INFO - Label 'UNREAD' removed from mail ID 1928dc7dd58de88c
+2025-06-01 22:08:04,435 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1928dc7dd58de88c
+2025-06-01 22:08:04,436 - root - INFO - Applied actions for mail ID 1928dc7dd58de88c in rule 'Test FROM conditions'
+2025-06-01 22:08:04,439 - root - INFO - Label 'READ' added to mail ID 1919c95fac183d91
+2025-06-01 22:08:04,441 - root - INFO - Label 'UNREAD' removed from mail ID 1919c95fac183d91
+2025-06-01 22:08:04,443 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1919c95fac183d91
+2025-06-01 22:08:04,443 - root - INFO - Applied actions for mail ID 1919c95fac183d91 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,446 - root - INFO - Label 'READ' added to mail ID 190ed359822ac8a5
+2025-06-01 22:08:04,447 - root - INFO - Label 'UNREAD' removed from mail ID 190ed359822ac8a5
+2025-06-01 22:08:04,450 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 190ed359822ac8a5
+2025-06-01 22:08:04,450 - root - INFO - Applied actions for mail ID 190ed359822ac8a5 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,455 - root - INFO - Label 'READ' added to mail ID 190e9169dd9a814b
+2025-06-01 22:08:04,461 - root - INFO - Label 'UNREAD' removed from mail ID 190e9169dd9a814b
+2025-06-01 22:08:04,469 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 190e9169dd9a814b
+2025-06-01 22:08:04,470 - root - INFO - Applied actions for mail ID 190e9169dd9a814b in rule 'Test FROM conditions'
+2025-06-01 22:08:04,480 - root - INFO - Label 'READ' added to mail ID 18ed371ca3b7194a
+2025-06-01 22:08:04,488 - root - INFO - Label 'UNREAD' removed from mail ID 18ed371ca3b7194a
+2025-06-01 22:08:04,497 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18ed371ca3b7194a
+2025-06-01 22:08:04,498 - root - INFO - Applied actions for mail ID 18ed371ca3b7194a in rule 'Test FROM conditions'
+2025-06-01 22:08:04,510 - root - INFO - Label 'READ' added to mail ID 18eac07ea3620ea7
+2025-06-01 22:08:04,521 - root - INFO - Label 'UNREAD' removed from mail ID 18eac07ea3620ea7
+2025-06-01 22:08:04,531 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18eac07ea3620ea7
+2025-06-01 22:08:04,531 - root - INFO - Applied actions for mail ID 18eac07ea3620ea7 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,544 - root - INFO - Label 'READ' added to mail ID 18ddecd050ef88af
+2025-06-01 22:08:04,556 - root - INFO - Label 'UNREAD' removed from mail ID 18ddecd050ef88af
+2025-06-01 22:08:04,563 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18ddecd050ef88af
+2025-06-01 22:08:04,563 - root - INFO - Applied actions for mail ID 18ddecd050ef88af in rule 'Test FROM conditions'
+2025-06-01 22:08:04,567 - root - INFO - Label 'READ' added to mail ID 18db04ef01843974
+2025-06-01 22:08:04,573 - root - INFO - Label 'UNREAD' removed from mail ID 18db04ef01843974
+2025-06-01 22:08:04,581 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18db04ef01843974
+2025-06-01 22:08:04,581 - root - INFO - Applied actions for mail ID 18db04ef01843974 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,584 - root - INFO - Label 'READ' added to mail ID 18cfbbba684c7314
+2025-06-01 22:08:04,596 - root - INFO - Label 'UNREAD' removed from mail ID 18cfbbba684c7314
+2025-06-01 22:08:04,600 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18cfbbba684c7314
+2025-06-01 22:08:04,600 - root - INFO - Applied actions for mail ID 18cfbbba684c7314 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,609 - root - INFO - Label 'READ' added to mail ID 189d954029e530b2
+2025-06-01 22:08:04,620 - root - INFO - Label 'UNREAD' removed from mail ID 189d954029e530b2
+2025-06-01 22:08:04,627 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 189d954029e530b2
+2025-06-01 22:08:04,627 - root - INFO - Applied actions for mail ID 189d954029e530b2 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,637 - root - INFO - Label 'READ' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:04,643 - root - INFO - Label 'UNREAD' removed from mail ID 1972bef2e886dfef
+2025-06-01 22:08:04,658 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:04,659 - root - INFO - Applied actions for mail ID 1972bef2e886dfef in rule 'Test FROM conditions'
+2025-06-01 22:08:04,669 - root - INFO - Label 'READ' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:04,677 - root - INFO - Label 'UNREAD' removed from mail ID 1972bef2a3020303
+2025-06-01 22:08:04,685 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:04,686 - root - INFO - Applied actions for mail ID 1972bef2a3020303 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,694 - root - INFO - Label 'READ' added to mail ID 189920079d60fffd
+2025-06-01 22:08:04,701 - root - INFO - Label 'UNREAD' removed from mail ID 189920079d60fffd
+2025-06-01 22:08:04,708 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 189920079d60fffd
+2025-06-01 22:08:04,708 - root - INFO - Applied actions for mail ID 189920079d60fffd in rule 'Test FROM conditions'
+2025-06-01 22:08:04,718 - root - INFO - Label 'READ' added to mail ID 1897732b617b3dfb
+2025-06-01 22:08:04,727 - root - INFO - Label 'UNREAD' removed from mail ID 1897732b617b3dfb
+2025-06-01 22:08:04,741 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1897732b617b3dfb
+2025-06-01 22:08:04,742 - root - INFO - Applied actions for mail ID 1897732b617b3dfb in rule 'Test FROM conditions'
+2025-06-01 22:08:04,745 - root - INFO - Label 'READ' added to mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:04,747 - root - INFO - Label 'UNREAD' removed from mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:04,748 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:04,748 - root - INFO - Applied actions for mail ID 184ae93c3f0e7e52 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,751 - root - INFO - Label 'READ' added to mail ID 184a26ea87f1bb10
+2025-06-01 22:08:04,753 - root - INFO - Label 'UNREAD' removed from mail ID 184a26ea87f1bb10
+2025-06-01 22:08:04,757 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 184a26ea87f1bb10
+2025-06-01 22:08:04,757 - root - INFO - Applied actions for mail ID 184a26ea87f1bb10 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,772 - root - INFO - Label 'READ' added to mail ID 18498227cd8dc4b4
+2025-06-01 22:08:04,781 - root - INFO - Label 'UNREAD' removed from mail ID 18498227cd8dc4b4
+2025-06-01 22:08:04,786 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18498227cd8dc4b4
+2025-06-01 22:08:04,786 - root - INFO - Applied actions for mail ID 18498227cd8dc4b4 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,797 - root - INFO - Label 'READ' added to mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:04,802 - root - INFO - Label 'UNREAD' removed from mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:04,807 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:04,807 - root - INFO - Applied actions for mail ID 18483a46cc4ac7f1 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,817 - root - INFO - Label 'READ' added to mail ID 1848153918894906
+2025-06-01 22:08:04,823 - root - INFO - Label 'UNREAD' removed from mail ID 1848153918894906
+2025-06-01 22:08:04,832 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1848153918894906
+2025-06-01 22:08:04,832 - root - INFO - Applied actions for mail ID 1848153918894906 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,843 - root - INFO - Label 'READ' added to mail ID 18466a7add10e1e3
+2025-06-01 22:08:04,855 - root - INFO - Label 'UNREAD' removed from mail ID 18466a7add10e1e3
+2025-06-01 22:08:04,861 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18466a7add10e1e3
+2025-06-01 22:08:04,861 - root - INFO - Applied actions for mail ID 18466a7add10e1e3 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,881 - root - INFO - Label 'READ' added to mail ID 18451a6231082008
+2025-06-01 22:08:04,897 - root - INFO - Label 'UNREAD' removed from mail ID 18451a6231082008
+2025-06-01 22:08:04,911 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18451a6231082008
+2025-06-01 22:08:04,911 - root - INFO - Applied actions for mail ID 18451a6231082008 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,916 - root - INFO - Label 'READ' added to mail ID 1841f7784f623cb2
+2025-06-01 22:08:04,921 - root - INFO - Label 'UNREAD' removed from mail ID 1841f7784f623cb2
+2025-06-01 22:08:04,926 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1841f7784f623cb2
+2025-06-01 22:08:04,926 - root - INFO - Applied actions for mail ID 1841f7784f623cb2 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,930 - root - INFO - Label 'READ' added to mail ID 1836324a7dc1caa7
+2025-06-01 22:08:04,933 - root - INFO - Label 'UNREAD' removed from mail ID 1836324a7dc1caa7
+2025-06-01 22:08:04,937 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1836324a7dc1caa7
+2025-06-01 22:08:04,937 - root - INFO - Applied actions for mail ID 1836324a7dc1caa7 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,943 - root - INFO - Label 'READ' added to mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:04,947 - root - INFO - Label 'UNREAD' removed from mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:04,951 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:04,951 - root - INFO - Applied actions for mail ID 1831cc8ffc988bf2 in rule 'Test FROM conditions'
+2025-06-01 22:08:04,957 - root - INFO - Label 'READ' added to mail ID 182fd250b7422a8c
+2025-06-01 22:08:04,962 - root - INFO - Label 'UNREAD' removed from mail ID 182fd250b7422a8c
+2025-06-01 22:08:04,967 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 182fd250b7422a8c
+2025-06-01 22:08:04,967 - root - INFO - Applied actions for mail ID 182fd250b7422a8c in rule 'Test FROM conditions'
+2025-06-01 22:08:04,972 - root - INFO - Label 'READ' added to mail ID 182c09fdbcddc38b
+2025-06-01 22:08:04,976 - root - INFO - Label 'UNREAD' removed from mail ID 182c09fdbcddc38b
+2025-06-01 22:08:04,981 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 182c09fdbcddc38b
+2025-06-01 22:08:04,981 - root - INFO - Applied actions for mail ID 182c09fdbcddc38b in rule 'Test FROM conditions'
+2025-06-01 22:08:04,988 - root - INFO - Label 'READ' added to mail ID 182ac03846afb2eb
+2025-06-01 22:08:04,994 - root - INFO - Label 'UNREAD' removed from mail ID 182ac03846afb2eb
+2025-06-01 22:08:05,001 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 182ac03846afb2eb
+2025-06-01 22:08:05,002 - root - INFO - Applied actions for mail ID 182ac03846afb2eb in rule 'Test FROM conditions'
+2025-06-01 22:08:05,012 - root - INFO - Label 'READ' added to mail ID 1768dd4c5a39e407
+2025-06-01 22:08:05,019 - root - INFO - Label 'UNREAD' removed from mail ID 1768dd4c5a39e407
+2025-06-01 22:08:05,021 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1768dd4c5a39e407
+2025-06-01 22:08:05,021 - root - INFO - Applied actions for mail ID 1768dd4c5a39e407 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,025 - root - INFO - Label 'READ' added to mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:05,032 - root - INFO - Label 'UNREAD' removed from mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:05,037 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:05,038 - root - INFO - Applied actions for mail ID 1829df8a3dbac9dd in rule 'Test FROM conditions'
+2025-06-01 22:08:05,044 - root - INFO - Label 'READ' added to mail ID 182692ccd900ee2d
+2025-06-01 22:08:05,048 - root - INFO - Label 'UNREAD' removed from mail ID 182692ccd900ee2d
+2025-06-01 22:08:05,063 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 182692ccd900ee2d
+2025-06-01 22:08:05,064 - root - INFO - Applied actions for mail ID 182692ccd900ee2d in rule 'Test FROM conditions'
+2025-06-01 22:08:05,069 - root - INFO - Label 'READ' added to mail ID 18150b515acc6981
+2025-06-01 22:08:05,086 - root - INFO - Label 'UNREAD' removed from mail ID 18150b515acc6981
+2025-06-01 22:08:05,102 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18150b515acc6981
+2025-06-01 22:08:05,102 - root - INFO - Applied actions for mail ID 18150b515acc6981 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,126 - root - INFO - Label 'READ' added to mail ID 18139794623d2130
+2025-06-01 22:08:05,136 - root - INFO - Label 'UNREAD' removed from mail ID 18139794623d2130
+2025-06-01 22:08:05,155 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 18139794623d2130
+2025-06-01 22:08:05,159 - root - INFO - Applied actions for mail ID 18139794623d2130 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,180 - root - INFO - Label 'READ' added to mail ID 1808d1c09302e3d8
+2025-06-01 22:08:05,193 - root - INFO - Label 'UNREAD' removed from mail ID 1808d1c09302e3d8
+2025-06-01 22:08:05,198 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1808d1c09302e3d8
+2025-06-01 22:08:05,198 - root - INFO - Applied actions for mail ID 1808d1c09302e3d8 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,209 - root - INFO - Label 'READ' added to mail ID 17ca348639d76883
+2025-06-01 22:08:05,212 - root - INFO - Label 'UNREAD' removed from mail ID 17ca348639d76883
+2025-06-01 22:08:05,218 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17ca348639d76883
+2025-06-01 22:08:05,218 - root - INFO - Applied actions for mail ID 17ca348639d76883 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,221 - root - INFO - Label 'READ' added to mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:05,226 - root - INFO - Label 'UNREAD' removed from mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:05,229 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:05,229 - root - INFO - Applied actions for mail ID 178b5f99e21c1b2c in rule 'Test FROM conditions'
+2025-06-01 22:08:05,235 - root - INFO - Label 'READ' added to mail ID 1786401462bfa030
+2025-06-01 22:08:05,237 - root - INFO - Label 'UNREAD' removed from mail ID 1786401462bfa030
+2025-06-01 22:08:05,240 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1786401462bfa030
+2025-06-01 22:08:05,240 - root - INFO - Applied actions for mail ID 1786401462bfa030 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,245 - root - INFO - Label 'READ' added to mail ID 177f2e5210b15f36
+2025-06-01 22:08:05,254 - root - INFO - Label 'UNREAD' removed from mail ID 177f2e5210b15f36
+2025-06-01 22:08:05,261 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 177f2e5210b15f36
+2025-06-01 22:08:05,261 - root - INFO - Applied actions for mail ID 177f2e5210b15f36 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,268 - root - INFO - Label 'READ' added to mail ID 177b5a94d94abbbe
+2025-06-01 22:08:05,273 - root - INFO - Label 'UNREAD' removed from mail ID 177b5a94d94abbbe
+2025-06-01 22:08:05,278 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 177b5a94d94abbbe
+2025-06-01 22:08:05,278 - root - INFO - Applied actions for mail ID 177b5a94d94abbbe in rule 'Test FROM conditions'
+2025-06-01 22:08:05,294 - root - INFO - Label 'READ' added to mail ID 1776901e291b8394
+2025-06-01 22:08:05,302 - root - INFO - Label 'UNREAD' removed from mail ID 1776901e291b8394
+2025-06-01 22:08:05,312 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1776901e291b8394
+2025-06-01 22:08:05,312 - root - INFO - Applied actions for mail ID 1776901e291b8394 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,319 - root - INFO - Label 'READ' added to mail ID 17763c83a3ce9e08
+2025-06-01 22:08:05,322 - root - INFO - Label 'UNREAD' removed from mail ID 17763c83a3ce9e08
+2025-06-01 22:08:05,326 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17763c83a3ce9e08
+2025-06-01 22:08:05,326 - root - INFO - Applied actions for mail ID 17763c83a3ce9e08 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,331 - root - INFO - Label 'READ' added to mail ID 17749c24cfb1f09e
+2025-06-01 22:08:05,336 - root - INFO - Label 'UNREAD' removed from mail ID 17749c24cfb1f09e
+2025-06-01 22:08:05,340 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17749c24cfb1f09e
+2025-06-01 22:08:05,340 - root - INFO - Applied actions for mail ID 17749c24cfb1f09e in rule 'Test FROM conditions'
+2025-06-01 22:08:05,348 - root - INFO - Label 'READ' added to mail ID 177023167574f938
+2025-06-01 22:08:05,353 - root - INFO - Label 'UNREAD' removed from mail ID 177023167574f938
+2025-06-01 22:08:05,360 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 177023167574f938
+2025-06-01 22:08:05,360 - root - INFO - Applied actions for mail ID 177023167574f938 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,369 - root - INFO - Label 'READ' added to mail ID 176f114a8cf53f09
+2025-06-01 22:08:05,375 - root - INFO - Label 'UNREAD' removed from mail ID 176f114a8cf53f09
+2025-06-01 22:08:05,381 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176f114a8cf53f09
+2025-06-01 22:08:05,381 - root - INFO - Applied actions for mail ID 176f114a8cf53f09 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,389 - root - INFO - Label 'READ' added to mail ID 176de448bcda08cf
+2025-06-01 22:08:05,395 - root - INFO - Label 'UNREAD' removed from mail ID 176de448bcda08cf
+2025-06-01 22:08:05,405 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176de448bcda08cf
+2025-06-01 22:08:05,406 - root - INFO - Applied actions for mail ID 176de448bcda08cf in rule 'Test FROM conditions'
+2025-06-01 22:08:05,417 - root - INFO - Label 'READ' added to mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:05,427 - root - INFO - Label 'UNREAD' removed from mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:05,437 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:05,437 - root - INFO - Applied actions for mail ID 176d28b2bbf1aab2 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,449 - root - INFO - Label 'READ' added to mail ID 17696f4f0186740e
+2025-06-01 22:08:05,456 - root - INFO - Label 'UNREAD' removed from mail ID 17696f4f0186740e
+2025-06-01 22:08:05,469 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17696f4f0186740e
+2025-06-01 22:08:05,469 - root - INFO - Applied actions for mail ID 17696f4f0186740e in rule 'Test FROM conditions'
+2025-06-01 22:08:05,483 - root - INFO - Label 'READ' added to mail ID 17692e92f24b2501
+2025-06-01 22:08:05,487 - root - INFO - Label 'UNREAD' removed from mail ID 17692e92f24b2501
+2025-06-01 22:08:05,497 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17692e92f24b2501
+2025-06-01 22:08:05,497 - root - INFO - Applied actions for mail ID 17692e92f24b2501 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,502 - root - INFO - Label 'READ' added to mail ID 176905e52e72d9fe
+2025-06-01 22:08:05,508 - root - INFO - Label 'UNREAD' removed from mail ID 176905e52e72d9fe
+2025-06-01 22:08:05,513 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176905e52e72d9fe
+2025-06-01 22:08:05,513 - root - INFO - Applied actions for mail ID 176905e52e72d9fe in rule 'Test FROM conditions'
+2025-06-01 22:08:05,519 - root - INFO - Label 'READ' added to mail ID 17468d58d2fe15a8
+2025-06-01 22:08:05,524 - root - INFO - Label 'UNREAD' removed from mail ID 17468d58d2fe15a8
+2025-06-01 22:08:05,530 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17468d58d2fe15a8
+2025-06-01 22:08:05,530 - root - INFO - Applied actions for mail ID 17468d58d2fe15a8 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,545 - root - INFO - Label 'READ' added to mail ID 1768dcd51ff524c0
+2025-06-01 22:08:05,552 - root - INFO - Label 'UNREAD' removed from mail ID 1768dcd51ff524c0
+2025-06-01 22:08:05,561 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1768dcd51ff524c0
+2025-06-01 22:08:05,562 - root - INFO - Applied actions for mail ID 1768dcd51ff524c0 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,572 - root - INFO - Label 'READ' added to mail ID 1768dc375beac442
+2025-06-01 22:08:05,581 - root - INFO - Label 'UNREAD' removed from mail ID 1768dc375beac442
+2025-06-01 22:08:05,586 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1768dc375beac442
+2025-06-01 22:08:05,586 - root - INFO - Applied actions for mail ID 1768dc375beac442 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,589 - root - INFO - Label 'READ' added to mail ID 1768ad67834a3a47
+2025-06-01 22:08:05,592 - root - INFO - Label 'UNREAD' removed from mail ID 1768ad67834a3a47
+2025-06-01 22:08:05,596 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1768ad67834a3a47
+2025-06-01 22:08:05,597 - root - INFO - Applied actions for mail ID 1768ad67834a3a47 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,602 - root - INFO - Label 'READ' added to mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:05,607 - root - INFO - Label 'UNREAD' removed from mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:05,611 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:05,612 - root - INFO - Applied actions for mail ID 1766c1dcdb854a0d in rule 'Test FROM conditions'
+2025-06-01 22:08:05,617 - root - INFO - Label 'READ' added to mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:05,618 - root - INFO - Label 'UNREAD' removed from mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:05,619 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:05,620 - root - INFO - Applied actions for mail ID 1766c1d1bc40f4ea in rule 'Test FROM conditions'
+2025-06-01 22:08:05,623 - root - INFO - Label 'READ' added to mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:05,631 - root - INFO - Label 'UNREAD' removed from mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:05,644 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:05,644 - root - INFO - Applied actions for mail ID 1766bfe4c5bcb0ae in rule 'Test FROM conditions'
+2025-06-01 22:08:05,653 - root - INFO - Label 'READ' added to mail ID 176614c8b3a31753
+2025-06-01 22:08:05,663 - root - INFO - Label 'UNREAD' removed from mail ID 176614c8b3a31753
+2025-06-01 22:08:05,672 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176614c8b3a31753
+2025-06-01 22:08:05,672 - root - INFO - Applied actions for mail ID 176614c8b3a31753 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,684 - root - INFO - Label 'READ' added to mail ID 1766147fb409fc0a
+2025-06-01 22:08:05,687 - root - INFO - Label 'UNREAD' removed from mail ID 1766147fb409fc0a
+2025-06-01 22:08:05,694 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1766147fb409fc0a
+2025-06-01 22:08:05,695 - root - INFO - Applied actions for mail ID 1766147fb409fc0a in rule 'Test FROM conditions'
+2025-06-01 22:08:05,707 - root - INFO - Label 'READ' added to mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:05,717 - root - INFO - Label 'UNREAD' removed from mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:05,725 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:05,726 - root - INFO - Applied actions for mail ID 1765f93e30bf9f0f in rule 'Test FROM conditions'
+2025-06-01 22:08:05,736 - root - INFO - Label 'READ' added to mail ID 17468d3b7e4aa416
+2025-06-01 22:08:05,744 - root - INFO - Label 'UNREAD' removed from mail ID 17468d3b7e4aa416
+2025-06-01 22:08:05,757 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17468d3b7e4aa416
+2025-06-01 22:08:05,757 - root - INFO - Applied actions for mail ID 17468d3b7e4aa416 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,777 - root - INFO - Label 'READ' added to mail ID 1745f5da956ce14f
+2025-06-01 22:08:05,785 - root - INFO - Label 'UNREAD' removed from mail ID 1745f5da956ce14f
+2025-06-01 22:08:05,809 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1745f5da956ce14f
+2025-06-01 22:08:05,809 - root - INFO - Applied actions for mail ID 1745f5da956ce14f in rule 'Test FROM conditions'
+2025-06-01 22:08:05,840 - root - INFO - Label 'READ' added to mail ID 1764d36ad8af2573
+2025-06-01 22:08:05,857 - root - INFO - Label 'UNREAD' removed from mail ID 1764d36ad8af2573
+2025-06-01 22:08:05,861 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1764d36ad8af2573
+2025-06-01 22:08:05,862 - root - INFO - Applied actions for mail ID 1764d36ad8af2573 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,865 - root - INFO - Label 'READ' added to mail ID 1763bb09a06fd719
+2025-06-01 22:08:05,867 - root - INFO - Label 'UNREAD' removed from mail ID 1763bb09a06fd719
+2025-06-01 22:08:05,868 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1763bb09a06fd719
+2025-06-01 22:08:05,868 - root - INFO - Applied actions for mail ID 1763bb09a06fd719 in rule 'Test FROM conditions'
+2025-06-01 22:08:05,874 - root - INFO - Label 'READ' added to mail ID 176139e46823b26a
+2025-06-01 22:08:05,890 - root - INFO - Label 'UNREAD' removed from mail ID 176139e46823b26a
+2025-06-01 22:08:05,906 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 176139e46823b26a
+2025-06-01 22:08:05,907 - root - INFO - Applied actions for mail ID 176139e46823b26a in rule 'Test FROM conditions'
+2025-06-01 22:08:05,923 - root - INFO - Label 'READ' added to mail ID 1760f45a88a0a90e
+2025-06-01 22:08:05,938 - root - INFO - Label 'UNREAD' removed from mail ID 1760f45a88a0a90e
+2025-06-01 22:08:05,957 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1760f45a88a0a90e
+2025-06-01 22:08:05,957 - root - INFO - Applied actions for mail ID 1760f45a88a0a90e in rule 'Test FROM conditions'
+2025-06-01 22:08:05,972 - root - INFO - Label 'READ' added to mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:05,987 - root - INFO - Label 'UNREAD' removed from mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:06,005 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:06,005 - root - INFO - Applied actions for mail ID 175cfcff1c7cafe5 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,017 - root - INFO - Label 'READ' added to mail ID 175cfcdd6601d443
+2025-06-01 22:08:06,029 - root - INFO - Label 'UNREAD' removed from mail ID 175cfcdd6601d443
+2025-06-01 22:08:06,040 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 175cfcdd6601d443
+2025-06-01 22:08:06,040 - root - INFO - Applied actions for mail ID 175cfcdd6601d443 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,053 - root - INFO - Label 'READ' added to mail ID 175c6175e7c272aa
+2025-06-01 22:08:06,062 - root - INFO - Label 'UNREAD' removed from mail ID 175c6175e7c272aa
+2025-06-01 22:08:06,070 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 175c6175e7c272aa
+2025-06-01 22:08:06,071 - root - INFO - Applied actions for mail ID 175c6175e7c272aa in rule 'Test FROM conditions'
+2025-06-01 22:08:06,089 - root - INFO - Label 'READ' added to mail ID 175a7efbc97f865f
+2025-06-01 22:08:06,101 - root - INFO - Label 'UNREAD' removed from mail ID 175a7efbc97f865f
+2025-06-01 22:08:06,111 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 175a7efbc97f865f
+2025-06-01 22:08:06,111 - root - INFO - Applied actions for mail ID 175a7efbc97f865f in rule 'Test FROM conditions'
+2025-06-01 22:08:06,119 - root - INFO - Label 'READ' added to mail ID 175a7e2868995be7
+2025-06-01 22:08:06,123 - root - INFO - Label 'UNREAD' removed from mail ID 175a7e2868995be7
+2025-06-01 22:08:06,135 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 175a7e2868995be7
+2025-06-01 22:08:06,136 - root - INFO - Applied actions for mail ID 175a7e2868995be7 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,147 - root - INFO - Label 'READ' added to mail ID 1750c167ec3753ab
+2025-06-01 22:08:06,155 - root - INFO - Label 'UNREAD' removed from mail ID 1750c167ec3753ab
+2025-06-01 22:08:06,162 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1750c167ec3753ab
+2025-06-01 22:08:06,163 - root - INFO - Applied actions for mail ID 1750c167ec3753ab in rule 'Test FROM conditions'
+2025-06-01 22:08:06,172 - root - INFO - Label 'READ' added to mail ID 174d7df7a27c5d51
+2025-06-01 22:08:06,178 - root - INFO - Label 'UNREAD' removed from mail ID 174d7df7a27c5d51
+2025-06-01 22:08:06,180 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 174d7df7a27c5d51
+2025-06-01 22:08:06,180 - root - INFO - Applied actions for mail ID 174d7df7a27c5d51 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,183 - root - INFO - Label 'READ' added to mail ID 174bf36cc70769f6
+2025-06-01 22:08:06,184 - root - INFO - Label 'UNREAD' removed from mail ID 174bf36cc70769f6
+2025-06-01 22:08:06,192 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 174bf36cc70769f6
+2025-06-01 22:08:06,193 - root - INFO - Applied actions for mail ID 174bf36cc70769f6 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,199 - root - INFO - Label 'READ' added to mail ID 174bb006ceb92642
+2025-06-01 22:08:06,203 - root - INFO - Label 'UNREAD' removed from mail ID 174bb006ceb92642
+2025-06-01 22:08:06,207 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 174bb006ceb92642
+2025-06-01 22:08:06,207 - root - INFO - Applied actions for mail ID 174bb006ceb92642 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,213 - root - INFO - Label 'READ' added to mail ID 174b5947655a1077
+2025-06-01 22:08:06,218 - root - INFO - Label 'UNREAD' removed from mail ID 174b5947655a1077
+2025-06-01 22:08:06,222 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 174b5947655a1077
+2025-06-01 22:08:06,222 - root - INFO - Applied actions for mail ID 174b5947655a1077 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,229 - root - INFO - Label 'READ' added to mail ID 1749fcd8aa8738be
+2025-06-01 22:08:06,233 - root - INFO - Label 'UNREAD' removed from mail ID 1749fcd8aa8738be
+2025-06-01 22:08:06,238 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1749fcd8aa8738be
+2025-06-01 22:08:06,239 - root - INFO - Applied actions for mail ID 1749fcd8aa8738be in rule 'Test FROM conditions'
+2025-06-01 22:08:06,247 - root - INFO - Label 'READ' added to mail ID 1749cb7da060c85e
+2025-06-01 22:08:06,251 - root - INFO - Label 'UNREAD' removed from mail ID 1749cb7da060c85e
+2025-06-01 22:08:06,265 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1749cb7da060c85e
+2025-06-01 22:08:06,266 - root - INFO - Applied actions for mail ID 1749cb7da060c85e in rule 'Test FROM conditions'
+2025-06-01 22:08:06,280 - root - INFO - Label 'READ' added to mail ID 1740219ba9b7ff46
+2025-06-01 22:08:06,290 - root - INFO - Label 'UNREAD' removed from mail ID 1740219ba9b7ff46
+2025-06-01 22:08:06,298 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1740219ba9b7ff46
+2025-06-01 22:08:06,298 - root - INFO - Applied actions for mail ID 1740219ba9b7ff46 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,322 - root - INFO - Label 'READ' added to mail ID 173d6b6a73122ff4
+2025-06-01 22:08:06,343 - root - INFO - Label 'UNREAD' removed from mail ID 173d6b6a73122ff4
+2025-06-01 22:08:06,349 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 173d6b6a73122ff4
+2025-06-01 22:08:06,349 - root - INFO - Applied actions for mail ID 173d6b6a73122ff4 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,357 - root - INFO - Label 'READ' added to mail ID 1739eb441b36d251
+2025-06-01 22:08:06,366 - root - INFO - Label 'UNREAD' removed from mail ID 1739eb441b36d251
+2025-06-01 22:08:06,376 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1739eb441b36d251
+2025-06-01 22:08:06,378 - root - INFO - Applied actions for mail ID 1739eb441b36d251 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,391 - root - INFO - Label 'READ' added to mail ID 17389c8880088e61
+2025-06-01 22:08:06,401 - root - INFO - Label 'UNREAD' removed from mail ID 17389c8880088e61
+2025-06-01 22:08:06,411 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17389c8880088e61
+2025-06-01 22:08:06,412 - root - INFO - Applied actions for mail ID 17389c8880088e61 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,426 - root - INFO - Label 'READ' added to mail ID 1737659962dc5280
+2025-06-01 22:08:06,435 - root - INFO - Label 'UNREAD' removed from mail ID 1737659962dc5280
+2025-06-01 22:08:06,443 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1737659962dc5280
+2025-06-01 22:08:06,443 - root - INFO - Applied actions for mail ID 1737659962dc5280 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,455 - root - INFO - Label 'READ' added to mail ID 1723733c14e33286
+2025-06-01 22:08:06,463 - root - INFO - Label 'UNREAD' removed from mail ID 1723733c14e33286
+2025-06-01 22:08:06,475 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1723733c14e33286
+2025-06-01 22:08:06,475 - root - INFO - Applied actions for mail ID 1723733c14e33286 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,480 - root - INFO - Label 'READ' added to mail ID 173750df9607ff04
+2025-06-01 22:08:06,497 - root - INFO - Label 'UNREAD' removed from mail ID 173750df9607ff04
+2025-06-01 22:08:06,503 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 173750df9607ff04
+2025-06-01 22:08:06,503 - root - INFO - Applied actions for mail ID 173750df9607ff04 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,509 - root - INFO - Label 'READ' added to mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:06,513 - root - INFO - Label 'UNREAD' removed from mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:06,519 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:06,519 - root - INFO - Applied actions for mail ID 1735c5e5ac7f4514 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,539 - root - INFO - Label 'READ' added to mail ID 173531a57593a976
+2025-06-01 22:08:06,542 - root - INFO - Label 'UNREAD' removed from mail ID 173531a57593a976
+2025-06-01 22:08:06,548 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 173531a57593a976
+2025-06-01 22:08:06,548 - root - INFO - Applied actions for mail ID 173531a57593a976 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,552 - root - INFO - Label 'READ' added to mail ID 173531a0865fb84e
+2025-06-01 22:08:06,553 - root - INFO - Label 'UNREAD' removed from mail ID 173531a0865fb84e
+2025-06-01 22:08:06,558 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 173531a0865fb84e
+2025-06-01 22:08:06,558 - root - INFO - Applied actions for mail ID 173531a0865fb84e in rule 'Test FROM conditions'
+2025-06-01 22:08:06,561 - root - INFO - Label 'READ' added to mail ID 17350c91471af55b
+2025-06-01 22:08:06,564 - root - INFO - Label 'UNREAD' removed from mail ID 17350c91471af55b
+2025-06-01 22:08:06,571 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17350c91471af55b
+2025-06-01 22:08:06,572 - root - INFO - Applied actions for mail ID 17350c91471af55b in rule 'Test FROM conditions'
+2025-06-01 22:08:06,580 - root - INFO - Label 'READ' added to mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:06,588 - root - INFO - Label 'UNREAD' removed from mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:06,596 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:06,596 - root - INFO - Applied actions for mail ID 1734ca58ad2beb8a in rule 'Test FROM conditions'
+2025-06-01 22:08:06,603 - root - INFO - Label 'READ' added to mail ID 1734895664952108
+2025-06-01 22:08:06,608 - root - INFO - Label 'UNREAD' removed from mail ID 1734895664952108
+2025-06-01 22:08:06,616 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1734895664952108
+2025-06-01 22:08:06,616 - root - INFO - Applied actions for mail ID 1734895664952108 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,627 - root - INFO - Label 'READ' added to mail ID 17346f508604a778
+2025-06-01 22:08:06,635 - root - INFO - Label 'UNREAD' removed from mail ID 17346f508604a778
+2025-06-01 22:08:06,641 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17346f508604a778
+2025-06-01 22:08:06,641 - root - INFO - Applied actions for mail ID 17346f508604a778 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,644 - root - INFO - Label 'READ' added to mail ID 17346e840f22c45c
+2025-06-01 22:08:06,646 - root - INFO - Label 'UNREAD' removed from mail ID 17346e840f22c45c
+2025-06-01 22:08:06,648 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17346e840f22c45c
+2025-06-01 22:08:06,648 - root - INFO - Applied actions for mail ID 17346e840f22c45c in rule 'Test FROM conditions'
+2025-06-01 22:08:06,650 - root - INFO - Label 'READ' added to mail ID 17318faa98dc0659
+2025-06-01 22:08:06,652 - root - INFO - Label 'UNREAD' removed from mail ID 17318faa98dc0659
+2025-06-01 22:08:06,658 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17318faa98dc0659
+2025-06-01 22:08:06,658 - root - INFO - Applied actions for mail ID 17318faa98dc0659 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,671 - root - INFO - Label 'READ' added to mail ID 172ead7e6ed77e21
+2025-06-01 22:08:06,684 - root - INFO - Label 'UNREAD' removed from mail ID 172ead7e6ed77e21
+2025-06-01 22:08:06,698 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 172ead7e6ed77e21
+2025-06-01 22:08:06,698 - root - INFO - Applied actions for mail ID 172ead7e6ed77e21 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,718 - root - INFO - Label 'READ' added to mail ID 172dcccf970651a9
+2025-06-01 22:08:06,724 - root - INFO - Label 'UNREAD' removed from mail ID 172dcccf970651a9
+2025-06-01 22:08:06,738 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 172dcccf970651a9
+2025-06-01 22:08:06,738 - root - INFO - Applied actions for mail ID 172dcccf970651a9 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,742 - root - INFO - Label 'READ' added to mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:06,748 - root - INFO - Label 'UNREAD' removed from mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:06,754 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:06,754 - root - INFO - Applied actions for mail ID 1729bfc44fcfcb08 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,766 - root - INFO - Label 'READ' added to mail ID 1729bfbc009035aa
+2025-06-01 22:08:06,774 - root - INFO - Label 'UNREAD' removed from mail ID 1729bfbc009035aa
+2025-06-01 22:08:06,789 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1729bfbc009035aa
+2025-06-01 22:08:06,789 - root - INFO - Applied actions for mail ID 1729bfbc009035aa in rule 'Test FROM conditions'
+2025-06-01 22:08:06,813 - root - INFO - Label 'READ' added to mail ID 172845a42a5348ab
+2025-06-01 22:08:06,819 - root - INFO - Label 'UNREAD' removed from mail ID 172845a42a5348ab
+2025-06-01 22:08:06,829 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 172845a42a5348ab
+2025-06-01 22:08:06,830 - root - INFO - Applied actions for mail ID 172845a42a5348ab in rule 'Test FROM conditions'
+2025-06-01 22:08:06,848 - root - INFO - Label 'READ' added to mail ID 1725c3a0399b519f
+2025-06-01 22:08:06,858 - root - INFO - Label 'UNREAD' removed from mail ID 1725c3a0399b519f
+2025-06-01 22:08:06,874 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1725c3a0399b519f
+2025-06-01 22:08:06,874 - root - INFO - Applied actions for mail ID 1725c3a0399b519f in rule 'Test FROM conditions'
+2025-06-01 22:08:06,891 - root - INFO - Label 'READ' added to mail ID 17218face6878117
+2025-06-01 22:08:06,900 - root - INFO - Label 'UNREAD' removed from mail ID 17218face6878117
+2025-06-01 22:08:06,909 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17218face6878117
+2025-06-01 22:08:06,910 - root - INFO - Applied actions for mail ID 17218face6878117 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,919 - root - INFO - Label 'READ' added to mail ID 171fe50d4b95bd37
+2025-06-01 22:08:06,926 - root - INFO - Label 'UNREAD' removed from mail ID 171fe50d4b95bd37
+2025-06-01 22:08:06,934 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 171fe50d4b95bd37
+2025-06-01 22:08:06,934 - root - INFO - Applied actions for mail ID 171fe50d4b95bd37 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,942 - root - INFO - Label 'READ' added to mail ID 171e033843b2dbe8
+2025-06-01 22:08:06,947 - root - INFO - Label 'UNREAD' removed from mail ID 171e033843b2dbe8
+2025-06-01 22:08:06,963 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 171e033843b2dbe8
+2025-06-01 22:08:06,963 - root - INFO - Applied actions for mail ID 171e033843b2dbe8 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,969 - root - INFO - Label 'READ' added to mail ID 1714612ae8368759
+2025-06-01 22:08:06,974 - root - INFO - Label 'UNREAD' removed from mail ID 1714612ae8368759
+2025-06-01 22:08:06,978 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1714612ae8368759
+2025-06-01 22:08:06,978 - root - INFO - Applied actions for mail ID 1714612ae8368759 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,981 - root - INFO - Label 'READ' added to mail ID 17112531c8a5061f
+2025-06-01 22:08:06,982 - root - INFO - Label 'UNREAD' removed from mail ID 17112531c8a5061f
+2025-06-01 22:08:06,986 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17112531c8a5061f
+2025-06-01 22:08:06,986 - root - INFO - Applied actions for mail ID 17112531c8a5061f in rule 'Test FROM conditions'
+2025-06-01 22:08:06,987 - root - INFO - Label 'READ' added to mail ID 17112531b09b3682
+2025-06-01 22:08:06,989 - root - INFO - Label 'UNREAD' removed from mail ID 17112531b09b3682
+2025-06-01 22:08:06,991 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17112531b09b3682
+2025-06-01 22:08:06,992 - root - INFO - Applied actions for mail ID 17112531b09b3682 in rule 'Test FROM conditions'
+2025-06-01 22:08:06,994 - root - INFO - Label 'READ' added to mail ID 170eca29a5a78c5f
+2025-06-01 22:08:06,996 - root - INFO - Label 'UNREAD' removed from mail ID 170eca29a5a78c5f
+2025-06-01 22:08:06,998 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 170eca29a5a78c5f
+2025-06-01 22:08:06,999 - root - INFO - Applied actions for mail ID 170eca29a5a78c5f in rule 'Test FROM conditions'
+2025-06-01 22:08:07,000 - root - INFO - Label 'READ' added to mail ID 170eca1a5541a791
+2025-06-01 22:08:07,002 - root - INFO - Label 'UNREAD' removed from mail ID 170eca1a5541a791
+2025-06-01 22:08:07,004 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 170eca1a5541a791
+2025-06-01 22:08:07,004 - root - INFO - Applied actions for mail ID 170eca1a5541a791 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,008 - root - INFO - Label 'READ' added to mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:07,009 - root - INFO - Label 'UNREAD' removed from mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:07,015 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:07,015 - root - INFO - Applied actions for mail ID 170d8a52fa1b33f5 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,023 - root - INFO - Label 'READ' added to mail ID 1706e852c4f71157
+2025-06-01 22:08:07,027 - root - INFO - Label 'UNREAD' removed from mail ID 1706e852c4f71157
+2025-06-01 22:08:07,031 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1706e852c4f71157
+2025-06-01 22:08:07,031 - root - INFO - Applied actions for mail ID 1706e852c4f71157 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,035 - root - INFO - Label 'READ' added to mail ID 17028ee221551225
+2025-06-01 22:08:07,038 - root - INFO - Label 'UNREAD' removed from mail ID 17028ee221551225
+2025-06-01 22:08:07,043 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 17028ee221551225
+2025-06-01 22:08:07,043 - root - INFO - Applied actions for mail ID 17028ee221551225 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,056 - root - INFO - Label 'READ' added to mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:07,067 - root - INFO - Label 'UNREAD' removed from mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:07,075 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:07,077 - root - INFO - Applied actions for mail ID 16ffaff9d9ab84cf in rule 'Test FROM conditions'
+2025-06-01 22:08:07,085 - root - INFO - Label 'READ' added to mail ID 16ff246460f60d6f
+2025-06-01 22:08:07,088 - root - INFO - Label 'UNREAD' removed from mail ID 16ff246460f60d6f
+2025-06-01 22:08:07,101 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16ff246460f60d6f
+2025-06-01 22:08:07,102 - root - INFO - Applied actions for mail ID 16ff246460f60d6f in rule 'Test FROM conditions'
+2025-06-01 22:08:07,105 - root - INFO - Label 'READ' added to mail ID 16f97cc6757b858b
+2025-06-01 22:08:07,108 - root - INFO - Label 'UNREAD' removed from mail ID 16f97cc6757b858b
+2025-06-01 22:08:07,113 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16f97cc6757b858b
+2025-06-01 22:08:07,113 - root - INFO - Applied actions for mail ID 16f97cc6757b858b in rule 'Test FROM conditions'
+2025-06-01 22:08:07,118 - root - INFO - Label 'READ' added to mail ID 16f92e4721a91160
+2025-06-01 22:08:07,120 - root - INFO - Label 'UNREAD' removed from mail ID 16f92e4721a91160
+2025-06-01 22:08:07,121 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16f92e4721a91160
+2025-06-01 22:08:07,121 - root - INFO - Applied actions for mail ID 16f92e4721a91160 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,123 - root - INFO - Label 'READ' added to mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:07,125 - root - INFO - Label 'UNREAD' removed from mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:07,128 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:07,129 - root - INFO - Applied actions for mail ID 16f92e4613f0b4bb in rule 'Test FROM conditions'
+2025-06-01 22:08:07,130 - root - INFO - Label 'READ' added to mail ID 16e506fc40df2621
+2025-06-01 22:08:07,132 - root - INFO - Label 'UNREAD' removed from mail ID 16e506fc40df2621
+2025-06-01 22:08:07,133 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16e506fc40df2621
+2025-06-01 22:08:07,133 - root - INFO - Applied actions for mail ID 16e506fc40df2621 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,135 - root - INFO - Label 'READ' added to mail ID 16d3eb6046eb135b
+2025-06-01 22:08:07,137 - root - INFO - Label 'UNREAD' removed from mail ID 16d3eb6046eb135b
+2025-06-01 22:08:07,139 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16d3eb6046eb135b
+2025-06-01 22:08:07,139 - root - INFO - Applied actions for mail ID 16d3eb6046eb135b in rule 'Test FROM conditions'
+2025-06-01 22:08:07,149 - root - INFO - Label 'READ' added to mail ID 16d3ea83ea771366
+2025-06-01 22:08:07,154 - root - INFO - Label 'UNREAD' removed from mail ID 16d3ea83ea771366
+2025-06-01 22:08:07,156 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16d3ea83ea771366
+2025-06-01 22:08:07,156 - root - INFO - Applied actions for mail ID 16d3ea83ea771366 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,162 - root - INFO - Label 'READ' added to mail ID 16d38c64a0bc1876
+2025-06-01 22:08:07,164 - root - INFO - Label 'UNREAD' removed from mail ID 16d38c64a0bc1876
+2025-06-01 22:08:07,169 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16d38c64a0bc1876
+2025-06-01 22:08:07,169 - root - INFO - Applied actions for mail ID 16d38c64a0bc1876 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,174 - root - INFO - Label 'READ' added to mail ID 16c86a06ac4548db
+2025-06-01 22:08:07,176 - root - INFO - Label 'UNREAD' removed from mail ID 16c86a06ac4548db
+2025-06-01 22:08:07,179 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16c86a06ac4548db
+2025-06-01 22:08:07,179 - root - INFO - Applied actions for mail ID 16c86a06ac4548db in rule 'Test FROM conditions'
+2025-06-01 22:08:07,182 - root - INFO - Label 'READ' added to mail ID 16be981eabd61e33
+2025-06-01 22:08:07,192 - root - INFO - Label 'UNREAD' removed from mail ID 16be981eabd61e33
+2025-06-01 22:08:07,195 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16be981eabd61e33
+2025-06-01 22:08:07,195 - root - INFO - Applied actions for mail ID 16be981eabd61e33 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,200 - root - INFO - Label 'READ' added to mail ID 16b9f38d82020dc5
+2025-06-01 22:08:07,204 - root - INFO - Label 'UNREAD' removed from mail ID 16b9f38d82020dc5
+2025-06-01 22:08:07,207 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16b9f38d82020dc5
+2025-06-01 22:08:07,207 - root - INFO - Applied actions for mail ID 16b9f38d82020dc5 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,213 - root - INFO - Label 'READ' added to mail ID 16abd25c249df76b
+2025-06-01 22:08:07,215 - root - INFO - Label 'UNREAD' removed from mail ID 16abd25c249df76b
+2025-06-01 22:08:07,217 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16abd25c249df76b
+2025-06-01 22:08:07,217 - root - INFO - Applied actions for mail ID 16abd25c249df76b in rule 'Test FROM conditions'
+2025-06-01 22:08:07,235 - root - INFO - Label 'READ' added to mail ID 16ab569ef243a373
+2025-06-01 22:08:07,237 - root - INFO - Label 'UNREAD' removed from mail ID 16ab569ef243a373
+2025-06-01 22:08:07,238 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16ab569ef243a373
+2025-06-01 22:08:07,238 - root - INFO - Applied actions for mail ID 16ab569ef243a373 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,242 - root - INFO - Label 'READ' added to mail ID 16a97a5581351091
+2025-06-01 22:08:07,246 - root - INFO - Label 'UNREAD' removed from mail ID 16a97a5581351091
+2025-06-01 22:08:07,249 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a97a5581351091
+2025-06-01 22:08:07,249 - root - INFO - Applied actions for mail ID 16a97a5581351091 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,253 - root - INFO - Label 'READ' added to mail ID 16a979c54893d3f4
+2025-06-01 22:08:07,258 - root - INFO - Label 'UNREAD' removed from mail ID 16a979c54893d3f4
+2025-06-01 22:08:07,261 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a979c54893d3f4
+2025-06-01 22:08:07,261 - root - INFO - Applied actions for mail ID 16a979c54893d3f4 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,263 - root - INFO - Label 'READ' added to mail ID 16a6dde2d986b41e
+2025-06-01 22:08:07,265 - root - INFO - Label 'UNREAD' removed from mail ID 16a6dde2d986b41e
+2025-06-01 22:08:07,268 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a6dde2d986b41e
+2025-06-01 22:08:07,268 - root - INFO - Applied actions for mail ID 16a6dde2d986b41e in rule 'Test FROM conditions'
+2025-06-01 22:08:07,269 - root - INFO - Label 'READ' added to mail ID 16a447ea60abcda0
+2025-06-01 22:08:07,270 - root - INFO - Label 'UNREAD' removed from mail ID 16a447ea60abcda0
+2025-06-01 22:08:07,272 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a447ea60abcda0
+2025-06-01 22:08:07,272 - root - INFO - Applied actions for mail ID 16a447ea60abcda0 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,273 - root - INFO - Label 'READ' added to mail ID 16a408da37abb6a6
+2025-06-01 22:08:07,274 - root - INFO - Label 'UNREAD' removed from mail ID 16a408da37abb6a6
+2025-06-01 22:08:07,276 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a408da37abb6a6
+2025-06-01 22:08:07,276 - root - INFO - Applied actions for mail ID 16a408da37abb6a6 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,278 - root - INFO - Label 'READ' added to mail ID 16a408989efc31d0
+2025-06-01 22:08:07,281 - root - INFO - Label 'UNREAD' removed from mail ID 16a408989efc31d0
+2025-06-01 22:08:07,293 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a408989efc31d0
+2025-06-01 22:08:07,293 - root - INFO - Applied actions for mail ID 16a408989efc31d0 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,319 - root - INFO - Label 'READ' added to mail ID 16a11fc86c07b654
+2025-06-01 22:08:07,333 - root - INFO - Label 'UNREAD' removed from mail ID 16a11fc86c07b654
+2025-06-01 22:08:07,338 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11fc86c07b654
+2025-06-01 22:08:07,338 - root - INFO - Applied actions for mail ID 16a11fc86c07b654 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,348 - root - INFO - Label 'READ' added to mail ID 16a11dfa804b091e
+2025-06-01 22:08:07,358 - root - INFO - Label 'UNREAD' removed from mail ID 16a11dfa804b091e
+2025-06-01 22:08:07,374 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11dfa804b091e
+2025-06-01 22:08:07,375 - root - INFO - Applied actions for mail ID 16a11dfa804b091e in rule 'Test FROM conditions'
+2025-06-01 22:08:07,388 - root - INFO - Label 'READ' added to mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:07,395 - root - INFO - Label 'UNREAD' removed from mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:07,400 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:07,400 - root - INFO - Applied actions for mail ID 16a11dcd4c1406f0 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,414 - root - INFO - Label 'READ' added to mail ID 16a11db87298e1e6
+2025-06-01 22:08:07,425 - root - INFO - Label 'UNREAD' removed from mail ID 16a11db87298e1e6
+2025-06-01 22:08:07,434 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11db87298e1e6
+2025-06-01 22:08:07,434 - root - INFO - Applied actions for mail ID 16a11db87298e1e6 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,444 - root - INFO - Label 'READ' added to mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:07,450 - root - INFO - Label 'UNREAD' removed from mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:07,455 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:07,455 - root - INFO - Applied actions for mail ID 16a11d9dbe7eb8c9 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,464 - root - INFO - Label 'READ' added to mail ID 16a11d9644c3bdac
+2025-06-01 22:08:07,471 - root - INFO - Label 'UNREAD' removed from mail ID 16a11d9644c3bdac
+2025-06-01 22:08:07,477 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 16a11d9644c3bdac
+2025-06-01 22:08:07,478 - root - INFO - Applied actions for mail ID 16a11d9644c3bdac in rule 'Test FROM conditions'
+2025-06-01 22:08:07,485 - root - INFO - Label 'READ' added to mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:07,489 - root - INFO - Label 'UNREAD' removed from mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:07,501 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:07,501 - root - INFO - Applied actions for mail ID 169c2aadfb7a25e3 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,513 - root - INFO - Label 'READ' added to mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:07,522 - root - INFO - Label 'UNREAD' removed from mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:07,530 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:07,531 - root - INFO - Applied actions for mail ID 1699e02b5f0e5ad3 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,538 - root - INFO - Label 'READ' added to mail ID 168e7d825a609ebb
+2025-06-01 22:08:07,543 - root - INFO - Label 'UNREAD' removed from mail ID 168e7d825a609ebb
+2025-06-01 22:08:07,548 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 168e7d825a609ebb
+2025-06-01 22:08:07,548 - root - INFO - Applied actions for mail ID 168e7d825a609ebb in rule 'Test FROM conditions'
+2025-06-01 22:08:07,552 - root - INFO - Label 'READ' added to mail ID 168e7d68c8016bd0
+2025-06-01 22:08:07,558 - root - INFO - Label 'UNREAD' removed from mail ID 168e7d68c8016bd0
+2025-06-01 22:08:07,574 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 168e7d68c8016bd0
+2025-06-01 22:08:07,575 - root - INFO - Applied actions for mail ID 168e7d68c8016bd0 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,599 - root - INFO - Label 'READ' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:07,608 - root - INFO - Label 'UNREAD' removed from mail ID 1972c255e2cb0846
+2025-06-01 22:08:07,616 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:07,616 - root - INFO - Applied actions for mail ID 1972c255e2cb0846 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,645 - root - INFO - Label 'READ' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:07,659 - root - INFO - Label 'UNREAD' removed from mail ID 1972c2150a7856e8
+2025-06-01 22:08:07,665 - root - INFO - Label 'CATEGORY_UPDATES' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:07,665 - root - INFO - Applied actions for mail ID 1972c2150a7856e8 in rule 'Test FROM conditions'
+2025-06-01 22:08:07,681 - root - INFO - Found 0 mails matching rule 'Test TO conditions'
+2025-06-01 22:08:07,700 - root - INFO - Found 142 mails matching rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,718 - root - INFO - Label 'UNREAD' added to mail ID 1928dc7dd58de88c
+2025-06-01 22:08:07,738 - root - INFO - Label 'READ' removed from mail ID 1928dc7dd58de88c
+2025-06-01 22:08:07,749 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1928dc7dd58de88c
+2025-06-01 22:08:07,749 - root - INFO - Applied actions for mail ID 1928dc7dd58de88c in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,759 - root - INFO - Label 'UNREAD' added to mail ID 1919c95fac183d91
+2025-06-01 22:08:07,775 - root - INFO - Label 'READ' removed from mail ID 1919c95fac183d91
+2025-06-01 22:08:07,781 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1919c95fac183d91
+2025-06-01 22:08:07,781 - root - INFO - Applied actions for mail ID 1919c95fac183d91 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,787 - root - INFO - Label 'UNREAD' added to mail ID 190ed359822ac8a5
+2025-06-01 22:08:07,793 - root - INFO - Label 'READ' removed from mail ID 190ed359822ac8a5
+2025-06-01 22:08:07,800 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 190ed359822ac8a5
+2025-06-01 22:08:07,801 - root - INFO - Applied actions for mail ID 190ed359822ac8a5 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,810 - root - INFO - Label 'UNREAD' added to mail ID 190e9169dd9a814b
+2025-06-01 22:08:07,820 - root - INFO - Label 'READ' removed from mail ID 190e9169dd9a814b
+2025-06-01 22:08:07,838 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 190e9169dd9a814b
+2025-06-01 22:08:07,838 - root - INFO - Applied actions for mail ID 190e9169dd9a814b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,852 - root - INFO - Label 'UNREAD' added to mail ID 18ed371ca3b7194a
+2025-06-01 22:08:07,865 - root - INFO - Label 'READ' removed from mail ID 18ed371ca3b7194a
+2025-06-01 22:08:07,872 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18ed371ca3b7194a
+2025-06-01 22:08:07,873 - root - INFO - Applied actions for mail ID 18ed371ca3b7194a in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,897 - root - INFO - Label 'UNREAD' added to mail ID 18eac07ea3620ea7
+2025-06-01 22:08:07,903 - root - INFO - Label 'READ' removed from mail ID 18eac07ea3620ea7
+2025-06-01 22:08:07,914 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18eac07ea3620ea7
+2025-06-01 22:08:07,914 - root - INFO - Applied actions for mail ID 18eac07ea3620ea7 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,938 - root - INFO - Label 'UNREAD' added to mail ID 18ddecd050ef88af
+2025-06-01 22:08:07,955 - root - INFO - Label 'READ' removed from mail ID 18ddecd050ef88af
+2025-06-01 22:08:07,974 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18ddecd050ef88af
+2025-06-01 22:08:07,975 - root - INFO - Applied actions for mail ID 18ddecd050ef88af in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:07,995 - root - INFO - Label 'UNREAD' added to mail ID 18db04ef01843974
+2025-06-01 22:08:08,007 - root - INFO - Label 'READ' removed from mail ID 18db04ef01843974
+2025-06-01 22:08:08,024 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18db04ef01843974
+2025-06-01 22:08:08,024 - root - INFO - Applied actions for mail ID 18db04ef01843974 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,039 - root - INFO - Label 'UNREAD' added to mail ID 18cfbbba684c7314
+2025-06-01 22:08:08,051 - root - INFO - Label 'READ' removed from mail ID 18cfbbba684c7314
+2025-06-01 22:08:08,070 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18cfbbba684c7314
+2025-06-01 22:08:08,070 - root - INFO - Applied actions for mail ID 18cfbbba684c7314 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,093 - root - INFO - Label 'UNREAD' added to mail ID 189d954029e530b2
+2025-06-01 22:08:08,101 - root - INFO - Label 'READ' removed from mail ID 189d954029e530b2
+2025-06-01 22:08:08,115 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 189d954029e530b2
+2025-06-01 22:08:08,116 - root - INFO - Applied actions for mail ID 189d954029e530b2 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,146 - root - INFO - Label 'UNREAD' added to mail ID 1967c332e2373339
+2025-06-01 22:08:08,157 - root - INFO - Label 'READ' removed from mail ID 1967c332e2373339
+2025-06-01 22:08:08,171 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1967c332e2373339
+2025-06-01 22:08:08,172 - root - INFO - Applied actions for mail ID 1967c332e2373339 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,186 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:08,203 - root - INFO - Label 'READ' removed from mail ID 1972bef2a3020303
+2025-06-01 22:08:08,216 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:08,216 - root - INFO - Applied actions for mail ID 1972bef2a3020303 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,234 - root - INFO - Label 'UNREAD' added to mail ID 189920079d60fffd
+2025-06-01 22:08:08,245 - root - INFO - Label 'READ' removed from mail ID 189920079d60fffd
+2025-06-01 22:08:08,253 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 189920079d60fffd
+2025-06-01 22:08:08,253 - root - INFO - Applied actions for mail ID 189920079d60fffd in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,278 - root - INFO - Label 'UNREAD' added to mail ID 1897732b617b3dfb
+2025-06-01 22:08:08,308 - root - INFO - Label 'READ' removed from mail ID 1897732b617b3dfb
+2025-06-01 22:08:08,318 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1897732b617b3dfb
+2025-06-01 22:08:08,318 - root - INFO - Applied actions for mail ID 1897732b617b3dfb in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,336 - root - INFO - Label 'UNREAD' added to mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:08,352 - root - INFO - Label 'READ' removed from mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:08,360 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 184ae93c3f0e7e52
+2025-06-01 22:08:08,360 - root - INFO - Applied actions for mail ID 184ae93c3f0e7e52 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,380 - root - INFO - Label 'UNREAD' added to mail ID 184a26ea87f1bb10
+2025-06-01 22:08:08,391 - root - INFO - Label 'READ' removed from mail ID 184a26ea87f1bb10
+2025-06-01 22:08:08,405 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 184a26ea87f1bb10
+2025-06-01 22:08:08,405 - root - INFO - Applied actions for mail ID 184a26ea87f1bb10 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,416 - root - INFO - Label 'UNREAD' added to mail ID 18498227cd8dc4b4
+2025-06-01 22:08:08,436 - root - INFO - Label 'READ' removed from mail ID 18498227cd8dc4b4
+2025-06-01 22:08:08,453 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18498227cd8dc4b4
+2025-06-01 22:08:08,454 - root - INFO - Applied actions for mail ID 18498227cd8dc4b4 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,471 - root - INFO - Label 'UNREAD' added to mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:08,481 - root - INFO - Label 'READ' removed from mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:08,484 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18483a46cc4ac7f1
+2025-06-01 22:08:08,484 - root - INFO - Applied actions for mail ID 18483a46cc4ac7f1 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,487 - root - INFO - Label 'UNREAD' added to mail ID 1848153918894906
+2025-06-01 22:08:08,490 - root - INFO - Label 'READ' removed from mail ID 1848153918894906
+2025-06-01 22:08:08,493 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1848153918894906
+2025-06-01 22:08:08,493 - root - INFO - Applied actions for mail ID 1848153918894906 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,498 - root - INFO - Label 'UNREAD' added to mail ID 18466a7add10e1e3
+2025-06-01 22:08:08,501 - root - INFO - Label 'READ' removed from mail ID 18466a7add10e1e3
+2025-06-01 22:08:08,504 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18466a7add10e1e3
+2025-06-01 22:08:08,504 - root - INFO - Applied actions for mail ID 18466a7add10e1e3 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,508 - root - INFO - Label 'UNREAD' added to mail ID 18451a6231082008
+2025-06-01 22:08:08,511 - root - INFO - Label 'READ' removed from mail ID 18451a6231082008
+2025-06-01 22:08:08,515 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18451a6231082008
+2025-06-01 22:08:08,515 - root - INFO - Applied actions for mail ID 18451a6231082008 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,519 - root - INFO - Label 'UNREAD' added to mail ID 1836324a7dc1caa7
+2025-06-01 22:08:08,522 - root - INFO - Label 'READ' removed from mail ID 1836324a7dc1caa7
+2025-06-01 22:08:08,525 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1836324a7dc1caa7
+2025-06-01 22:08:08,525 - root - INFO - Applied actions for mail ID 1836324a7dc1caa7 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,530 - root - INFO - Label 'UNREAD' added to mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:08,533 - root - INFO - Label 'READ' removed from mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:08,535 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1831cc8ffc988bf2
+2025-06-01 22:08:08,536 - root - INFO - Applied actions for mail ID 1831cc8ffc988bf2 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,540 - root - INFO - Label 'UNREAD' added to mail ID 182fd250b7422a8c
+2025-06-01 22:08:08,543 - root - INFO - Label 'READ' removed from mail ID 182fd250b7422a8c
+2025-06-01 22:08:08,549 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 182fd250b7422a8c
+2025-06-01 22:08:08,549 - root - INFO - Applied actions for mail ID 182fd250b7422a8c in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,555 - root - INFO - Label 'UNREAD' added to mail ID 182c09fdbcddc38b
+2025-06-01 22:08:08,563 - root - INFO - Label 'READ' removed from mail ID 182c09fdbcddc38b
+2025-06-01 22:08:08,571 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 182c09fdbcddc38b
+2025-06-01 22:08:08,571 - root - INFO - Applied actions for mail ID 182c09fdbcddc38b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,586 - root - INFO - Label 'UNREAD' added to mail ID 182ac03846afb2eb
+2025-06-01 22:08:08,595 - root - INFO - Label 'READ' removed from mail ID 182ac03846afb2eb
+2025-06-01 22:08:08,603 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 182ac03846afb2eb
+2025-06-01 22:08:08,603 - root - INFO - Applied actions for mail ID 182ac03846afb2eb in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,616 - root - INFO - Label 'UNREAD' added to mail ID 1768dd4c5a39e407
+2025-06-01 22:08:08,623 - root - INFO - Label 'READ' removed from mail ID 1768dd4c5a39e407
+2025-06-01 22:08:08,630 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1768dd4c5a39e407
+2025-06-01 22:08:08,631 - root - INFO - Applied actions for mail ID 1768dd4c5a39e407 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,637 - root - INFO - Label 'UNREAD' added to mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:08,641 - root - INFO - Label 'READ' removed from mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:08,646 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1829df8a3dbac9dd
+2025-06-01 22:08:08,646 - root - INFO - Applied actions for mail ID 1829df8a3dbac9dd in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,655 - root - INFO - Label 'UNREAD' added to mail ID 182692ccd900ee2d
+2025-06-01 22:08:08,663 - root - INFO - Label 'READ' removed from mail ID 182692ccd900ee2d
+2025-06-01 22:08:08,678 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 182692ccd900ee2d
+2025-06-01 22:08:08,679 - root - INFO - Applied actions for mail ID 182692ccd900ee2d in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,701 - root - INFO - Label 'UNREAD' added to mail ID 18150b515acc6981
+2025-06-01 22:08:08,715 - root - INFO - Label 'READ' removed from mail ID 18150b515acc6981
+2025-06-01 22:08:08,722 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18150b515acc6981
+2025-06-01 22:08:08,722 - root - INFO - Applied actions for mail ID 18150b515acc6981 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,742 - root - INFO - Label 'UNREAD' added to mail ID 18139794623d2130
+2025-06-01 22:08:08,752 - root - INFO - Label 'READ' removed from mail ID 18139794623d2130
+2025-06-01 22:08:08,764 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 18139794623d2130
+2025-06-01 22:08:08,764 - root - INFO - Applied actions for mail ID 18139794623d2130 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,776 - root - INFO - Label 'UNREAD' added to mail ID 1808d1c09302e3d8
+2025-06-01 22:08:08,787 - root - INFO - Label 'READ' removed from mail ID 1808d1c09302e3d8
+2025-06-01 22:08:08,800 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1808d1c09302e3d8
+2025-06-01 22:08:08,801 - root - INFO - Applied actions for mail ID 1808d1c09302e3d8 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,816 - root - INFO - Label 'UNREAD' added to mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:08,825 - root - INFO - Label 'READ' removed from mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:08,836 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 178b5f99e21c1b2c
+2025-06-01 22:08:08,837 - root - INFO - Applied actions for mail ID 178b5f99e21c1b2c in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,853 - root - INFO - Label 'UNREAD' added to mail ID 1786401462bfa030
+2025-06-01 22:08:08,861 - root - INFO - Label 'READ' removed from mail ID 1786401462bfa030
+2025-06-01 22:08:08,867 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1786401462bfa030
+2025-06-01 22:08:08,868 - root - INFO - Applied actions for mail ID 1786401462bfa030 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,876 - root - INFO - Label 'UNREAD' added to mail ID 177f2e5210b15f36
+2025-06-01 22:08:08,891 - root - INFO - Label 'READ' removed from mail ID 177f2e5210b15f36
+2025-06-01 22:08:08,908 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 177f2e5210b15f36
+2025-06-01 22:08:08,908 - root - INFO - Applied actions for mail ID 177f2e5210b15f36 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,921 - root - INFO - Label 'UNREAD' added to mail ID 177b5a94d94abbbe
+2025-06-01 22:08:08,935 - root - INFO - Label 'READ' removed from mail ID 177b5a94d94abbbe
+2025-06-01 22:08:08,952 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 177b5a94d94abbbe
+2025-06-01 22:08:08,953 - root - INFO - Applied actions for mail ID 177b5a94d94abbbe in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,967 - root - INFO - Label 'UNREAD' added to mail ID 1776901e291b8394
+2025-06-01 22:08:08,973 - root - INFO - Label 'READ' removed from mail ID 1776901e291b8394
+2025-06-01 22:08:08,979 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1776901e291b8394
+2025-06-01 22:08:08,979 - root - INFO - Applied actions for mail ID 1776901e291b8394 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,983 - root - INFO - Label 'UNREAD' added to mail ID 17763c83a3ce9e08
+2025-06-01 22:08:08,987 - root - INFO - Label 'READ' removed from mail ID 17763c83a3ce9e08
+2025-06-01 22:08:08,991 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17763c83a3ce9e08
+2025-06-01 22:08:08,991 - root - INFO - Applied actions for mail ID 17763c83a3ce9e08 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:08,999 - root - INFO - Label 'UNREAD' added to mail ID 17749c24cfb1f09e
+2025-06-01 22:08:09,007 - root - INFO - Label 'READ' removed from mail ID 17749c24cfb1f09e
+2025-06-01 22:08:09,017 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17749c24cfb1f09e
+2025-06-01 22:08:09,017 - root - INFO - Applied actions for mail ID 17749c24cfb1f09e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,031 - root - INFO - Label 'UNREAD' added to mail ID 177023167574f938
+2025-06-01 22:08:09,039 - root - INFO - Label 'READ' removed from mail ID 177023167574f938
+2025-06-01 22:08:09,047 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 177023167574f938
+2025-06-01 22:08:09,048 - root - INFO - Applied actions for mail ID 177023167574f938 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,058 - root - INFO - Label 'UNREAD' added to mail ID 176f114a8cf53f09
+2025-06-01 22:08:09,068 - root - INFO - Label 'READ' removed from mail ID 176f114a8cf53f09
+2025-06-01 22:08:09,077 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176f114a8cf53f09
+2025-06-01 22:08:09,077 - root - INFO - Applied actions for mail ID 176f114a8cf53f09 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,087 - root - INFO - Label 'UNREAD' added to mail ID 176de448bcda08cf
+2025-06-01 22:08:09,093 - root - INFO - Label 'READ' removed from mail ID 176de448bcda08cf
+2025-06-01 22:08:09,107 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176de448bcda08cf
+2025-06-01 22:08:09,107 - root - INFO - Applied actions for mail ID 176de448bcda08cf in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,114 - root - INFO - Label 'UNREAD' added to mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:09,121 - root - INFO - Label 'READ' removed from mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:09,129 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176d28b2bbf1aab2
+2025-06-01 22:08:09,130 - root - INFO - Applied actions for mail ID 176d28b2bbf1aab2 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,149 - root - INFO - Label 'UNREAD' added to mail ID 17696f4f0186740e
+2025-06-01 22:08:09,158 - root - INFO - Label 'READ' removed from mail ID 17696f4f0186740e
+2025-06-01 22:08:09,174 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17696f4f0186740e
+2025-06-01 22:08:09,174 - root - INFO - Applied actions for mail ID 17696f4f0186740e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,195 - root - INFO - Label 'UNREAD' added to mail ID 17692e92f24b2501
+2025-06-01 22:08:09,206 - root - INFO - Label 'READ' removed from mail ID 17692e92f24b2501
+2025-06-01 22:08:09,213 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17692e92f24b2501
+2025-06-01 22:08:09,213 - root - INFO - Applied actions for mail ID 17692e92f24b2501 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,225 - root - INFO - Label 'UNREAD' added to mail ID 176905e52e72d9fe
+2025-06-01 22:08:09,232 - root - INFO - Label 'READ' removed from mail ID 176905e52e72d9fe
+2025-06-01 22:08:09,241 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176905e52e72d9fe
+2025-06-01 22:08:09,242 - root - INFO - Applied actions for mail ID 176905e52e72d9fe in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,251 - root - INFO - Label 'UNREAD' added to mail ID 17468d58d2fe15a8
+2025-06-01 22:08:09,258 - root - INFO - Label 'READ' removed from mail ID 17468d58d2fe15a8
+2025-06-01 22:08:09,266 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17468d58d2fe15a8
+2025-06-01 22:08:09,266 - root - INFO - Applied actions for mail ID 17468d58d2fe15a8 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,284 - root - INFO - Label 'UNREAD' added to mail ID 1768dc375beac442
+2025-06-01 22:08:09,299 - root - INFO - Label 'READ' removed from mail ID 1768dc375beac442
+2025-06-01 22:08:09,315 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1768dc375beac442
+2025-06-01 22:08:09,316 - root - INFO - Applied actions for mail ID 1768dc375beac442 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,335 - root - INFO - Label 'UNREAD' added to mail ID 1768ad67834a3a47
+2025-06-01 22:08:09,354 - root - INFO - Label 'READ' removed from mail ID 1768ad67834a3a47
+2025-06-01 22:08:09,367 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1768ad67834a3a47
+2025-06-01 22:08:09,367 - root - INFO - Applied actions for mail ID 1768ad67834a3a47 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,381 - root - INFO - Label 'UNREAD' added to mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:09,390 - root - INFO - Label 'READ' removed from mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:09,401 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1766c1dcdb854a0d
+2025-06-01 22:08:09,401 - root - INFO - Applied actions for mail ID 1766c1dcdb854a0d in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,413 - root - INFO - Label 'UNREAD' added to mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:09,422 - root - INFO - Label 'READ' removed from mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:09,438 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1766c1d1bc40f4ea
+2025-06-01 22:08:09,438 - root - INFO - Applied actions for mail ID 1766c1d1bc40f4ea in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,445 - root - INFO - Label 'UNREAD' added to mail ID 176614c8b3a31753
+2025-06-01 22:08:09,461 - root - INFO - Label 'READ' removed from mail ID 176614c8b3a31753
+2025-06-01 22:08:09,477 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176614c8b3a31753
+2025-06-01 22:08:09,477 - root - INFO - Applied actions for mail ID 176614c8b3a31753 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,500 - root - INFO - Label 'UNREAD' added to mail ID 1766147fb409fc0a
+2025-06-01 22:08:09,512 - root - INFO - Label 'READ' removed from mail ID 1766147fb409fc0a
+2025-06-01 22:08:09,530 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1766147fb409fc0a
+2025-06-01 22:08:09,531 - root - INFO - Applied actions for mail ID 1766147fb409fc0a in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,552 - root - INFO - Label 'UNREAD' added to mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:09,572 - root - INFO - Label 'READ' removed from mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:09,592 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1765f93e30bf9f0f
+2025-06-01 22:08:09,593 - root - INFO - Applied actions for mail ID 1765f93e30bf9f0f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,614 - root - INFO - Label 'UNREAD' added to mail ID 17468d3b7e4aa416
+2025-06-01 22:08:09,637 - root - INFO - Label 'READ' removed from mail ID 17468d3b7e4aa416
+2025-06-01 22:08:09,641 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17468d3b7e4aa416
+2025-06-01 22:08:09,641 - root - INFO - Applied actions for mail ID 17468d3b7e4aa416 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,649 - root - INFO - Label 'UNREAD' added to mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:09,653 - root - INFO - Label 'READ' removed from mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:09,669 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1766bfe4c5bcb0ae
+2025-06-01 22:08:09,669 - root - INFO - Applied actions for mail ID 1766bfe4c5bcb0ae in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,673 - root - INFO - Label 'UNREAD' added to mail ID 1745f5da956ce14f
+2025-06-01 22:08:09,681 - root - INFO - Label 'READ' removed from mail ID 1745f5da956ce14f
+2025-06-01 22:08:09,686 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1745f5da956ce14f
+2025-06-01 22:08:09,686 - root - INFO - Applied actions for mail ID 1745f5da956ce14f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,692 - root - INFO - Label 'UNREAD' added to mail ID 1764d36ad8af2573
+2025-06-01 22:08:09,698 - root - INFO - Label 'READ' removed from mail ID 1764d36ad8af2573
+2025-06-01 22:08:09,705 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1764d36ad8af2573
+2025-06-01 22:08:09,705 - root - INFO - Applied actions for mail ID 1764d36ad8af2573 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,710 - root - INFO - Label 'UNREAD' added to mail ID 1763bb09a06fd719
+2025-06-01 22:08:09,714 - root - INFO - Label 'READ' removed from mail ID 1763bb09a06fd719
+2025-06-01 22:08:09,719 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1763bb09a06fd719
+2025-06-01 22:08:09,719 - root - INFO - Applied actions for mail ID 1763bb09a06fd719 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,725 - root - INFO - Label 'UNREAD' added to mail ID 175cfcdd6601d443
+2025-06-01 22:08:09,731 - root - INFO - Label 'READ' removed from mail ID 175cfcdd6601d443
+2025-06-01 22:08:09,738 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 175cfcdd6601d443
+2025-06-01 22:08:09,738 - root - INFO - Applied actions for mail ID 175cfcdd6601d443 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,747 - root - INFO - Label 'UNREAD' added to mail ID 175c6175e7c272aa
+2025-06-01 22:08:09,757 - root - INFO - Label 'READ' removed from mail ID 175c6175e7c272aa
+2025-06-01 22:08:09,761 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 175c6175e7c272aa
+2025-06-01 22:08:09,761 - root - INFO - Applied actions for mail ID 175c6175e7c272aa in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,769 - root - INFO - Label 'UNREAD' added to mail ID 175a7efbc97f865f
+2025-06-01 22:08:09,778 - root - INFO - Label 'READ' removed from mail ID 175a7efbc97f865f
+2025-06-01 22:08:09,782 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 175a7efbc97f865f
+2025-06-01 22:08:09,782 - root - INFO - Applied actions for mail ID 175a7efbc97f865f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,786 - root - INFO - Label 'UNREAD' added to mail ID 176139e46823b26a
+2025-06-01 22:08:09,790 - root - INFO - Label 'READ' removed from mail ID 176139e46823b26a
+2025-06-01 22:08:09,797 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 176139e46823b26a
+2025-06-01 22:08:09,797 - root - INFO - Applied actions for mail ID 176139e46823b26a in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,800 - root - INFO - Label 'UNREAD' added to mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:09,807 - root - INFO - Label 'READ' removed from mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:09,813 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 175cfcff1c7cafe5
+2025-06-01 22:08:09,813 - root - INFO - Applied actions for mail ID 175cfcff1c7cafe5 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,819 - root - INFO - Label 'UNREAD' added to mail ID 1750c167ec3753ab
+2025-06-01 22:08:09,825 - root - INFO - Label 'READ' removed from mail ID 1750c167ec3753ab
+2025-06-01 22:08:09,832 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1750c167ec3753ab
+2025-06-01 22:08:09,832 - root - INFO - Applied actions for mail ID 1750c167ec3753ab in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,843 - root - INFO - Label 'UNREAD' added to mail ID 174d7df7a27c5d51
+2025-06-01 22:08:09,850 - root - INFO - Label 'READ' removed from mail ID 174d7df7a27c5d51
+2025-06-01 22:08:09,856 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 174d7df7a27c5d51
+2025-06-01 22:08:09,856 - root - INFO - Applied actions for mail ID 174d7df7a27c5d51 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,863 - root - INFO - Label 'UNREAD' added to mail ID 174bb006ceb92642
+2025-06-01 22:08:09,868 - root - INFO - Label 'READ' removed from mail ID 174bb006ceb92642
+2025-06-01 22:08:09,871 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 174bb006ceb92642
+2025-06-01 22:08:09,872 - root - INFO - Applied actions for mail ID 174bb006ceb92642 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,876 - root - INFO - Label 'UNREAD' added to mail ID 174b5947655a1077
+2025-06-01 22:08:09,880 - root - INFO - Label 'READ' removed from mail ID 174b5947655a1077
+2025-06-01 22:08:09,884 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 174b5947655a1077
+2025-06-01 22:08:09,884 - root - INFO - Applied actions for mail ID 174b5947655a1077 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,887 - root - INFO - Label 'UNREAD' added to mail ID 1749fcd8aa8738be
+2025-06-01 22:08:09,891 - root - INFO - Label 'READ' removed from mail ID 1749fcd8aa8738be
+2025-06-01 22:08:09,900 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1749fcd8aa8738be
+2025-06-01 22:08:09,900 - root - INFO - Applied actions for mail ID 1749fcd8aa8738be in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,911 - root - INFO - Label 'UNREAD' added to mail ID 1749cb7da060c85e
+2025-06-01 22:08:09,921 - root - INFO - Label 'READ' removed from mail ID 1749cb7da060c85e
+2025-06-01 22:08:09,928 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1749cb7da060c85e
+2025-06-01 22:08:09,928 - root - INFO - Applied actions for mail ID 1749cb7da060c85e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,937 - root - INFO - Label 'UNREAD' added to mail ID 1740219ba9b7ff46
+2025-06-01 22:08:09,949 - root - INFO - Label 'READ' removed from mail ID 1740219ba9b7ff46
+2025-06-01 22:08:09,959 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1740219ba9b7ff46
+2025-06-01 22:08:09,959 - root - INFO - Applied actions for mail ID 1740219ba9b7ff46 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:09,981 - root - INFO - Label 'UNREAD' added to mail ID 173d6b6a73122ff4
+2025-06-01 22:08:09,990 - root - INFO - Label 'READ' removed from mail ID 173d6b6a73122ff4
+2025-06-01 22:08:09,998 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 173d6b6a73122ff4
+2025-06-01 22:08:09,998 - root - INFO - Applied actions for mail ID 173d6b6a73122ff4 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,004 - root - INFO - Label 'UNREAD' added to mail ID 1739eb441b36d251
+2025-06-01 22:08:10,008 - root - INFO - Label 'READ' removed from mail ID 1739eb441b36d251
+2025-06-01 22:08:10,015 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1739eb441b36d251
+2025-06-01 22:08:10,016 - root - INFO - Applied actions for mail ID 1739eb441b36d251 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,025 - root - INFO - Label 'UNREAD' added to mail ID 17389c8880088e61
+2025-06-01 22:08:10,033 - root - INFO - Label 'READ' removed from mail ID 17389c8880088e61
+2025-06-01 22:08:10,038 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17389c8880088e61
+2025-06-01 22:08:10,038 - root - INFO - Applied actions for mail ID 17389c8880088e61 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,044 - root - INFO - Label 'UNREAD' added to mail ID 1737659962dc5280
+2025-06-01 22:08:10,053 - root - INFO - Label 'READ' removed from mail ID 1737659962dc5280
+2025-06-01 22:08:10,060 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1737659962dc5280
+2025-06-01 22:08:10,060 - root - INFO - Applied actions for mail ID 1737659962dc5280 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,071 - root - INFO - Label 'UNREAD' added to mail ID 173750df9607ff04
+2025-06-01 22:08:10,076 - root - INFO - Label 'READ' removed from mail ID 173750df9607ff04
+2025-06-01 22:08:10,095 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 173750df9607ff04
+2025-06-01 22:08:10,096 - root - INFO - Applied actions for mail ID 173750df9607ff04 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,109 - root - INFO - Label 'UNREAD' added to mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:10,122 - root - INFO - Label 'READ' removed from mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:10,132 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1735c5e5ac7f4514
+2025-06-01 22:08:10,132 - root - INFO - Applied actions for mail ID 1735c5e5ac7f4514 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,145 - root - INFO - Label 'UNREAD' added to mail ID 173531a57593a976
+2025-06-01 22:08:10,160 - root - INFO - Label 'READ' removed from mail ID 173531a57593a976
+2025-06-01 22:08:10,170 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 173531a57593a976
+2025-06-01 22:08:10,171 - root - INFO - Applied actions for mail ID 173531a57593a976 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,183 - root - INFO - Label 'UNREAD' added to mail ID 173531a0865fb84e
+2025-06-01 22:08:10,191 - root - INFO - Label 'READ' removed from mail ID 173531a0865fb84e
+2025-06-01 22:08:10,200 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 173531a0865fb84e
+2025-06-01 22:08:10,200 - root - INFO - Applied actions for mail ID 173531a0865fb84e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,211 - root - INFO - Label 'UNREAD' added to mail ID 17350c91471af55b
+2025-06-01 22:08:10,218 - root - INFO - Label 'READ' removed from mail ID 17350c91471af55b
+2025-06-01 22:08:10,229 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17350c91471af55b
+2025-06-01 22:08:10,230 - root - INFO - Applied actions for mail ID 17350c91471af55b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,240 - root - INFO - Label 'UNREAD' added to mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:10,248 - root - INFO - Label 'READ' removed from mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:10,255 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1734ca58ad2beb8a
+2025-06-01 22:08:10,256 - root - INFO - Applied actions for mail ID 1734ca58ad2beb8a in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,266 - root - INFO - Label 'UNREAD' added to mail ID 1734895664952108
+2025-06-01 22:08:10,273 - root - INFO - Label 'READ' removed from mail ID 1734895664952108
+2025-06-01 22:08:10,280 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1734895664952108
+2025-06-01 22:08:10,280 - root - INFO - Applied actions for mail ID 1734895664952108 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,299 - root - INFO - Label 'UNREAD' added to mail ID 17346f508604a778
+2025-06-01 22:08:10,319 - root - INFO - Label 'READ' removed from mail ID 17346f508604a778
+2025-06-01 22:08:10,325 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17346f508604a778
+2025-06-01 22:08:10,325 - root - INFO - Applied actions for mail ID 17346f508604a778 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,351 - root - INFO - Label 'UNREAD' added to mail ID 17346e840f22c45c
+2025-06-01 22:08:10,361 - root - INFO - Label 'READ' removed from mail ID 17346e840f22c45c
+2025-06-01 22:08:10,378 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17346e840f22c45c
+2025-06-01 22:08:10,378 - root - INFO - Applied actions for mail ID 17346e840f22c45c in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,393 - root - INFO - Label 'UNREAD' added to mail ID 17318faa98dc0659
+2025-06-01 22:08:10,417 - root - INFO - Label 'READ' removed from mail ID 17318faa98dc0659
+2025-06-01 22:08:10,435 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17318faa98dc0659
+2025-06-01 22:08:10,435 - root - INFO - Applied actions for mail ID 17318faa98dc0659 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,457 - root - INFO - Label 'UNREAD' added to mail ID 172ead7e6ed77e21
+2025-06-01 22:08:10,464 - root - INFO - Label 'READ' removed from mail ID 172ead7e6ed77e21
+2025-06-01 22:08:10,477 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 172ead7e6ed77e21
+2025-06-01 22:08:10,477 - root - INFO - Applied actions for mail ID 172ead7e6ed77e21 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,488 - root - INFO - Label 'UNREAD' added to mail ID 172dcccf970651a9
+2025-06-01 22:08:10,493 - root - INFO - Label 'READ' removed from mail ID 172dcccf970651a9
+2025-06-01 22:08:10,499 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 172dcccf970651a9
+2025-06-01 22:08:10,500 - root - INFO - Applied actions for mail ID 172dcccf970651a9 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,508 - root - INFO - Label 'UNREAD' added to mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:10,522 - root - INFO - Label 'READ' removed from mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:10,537 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1729bfc44fcfcb08
+2025-06-01 22:08:10,538 - root - INFO - Applied actions for mail ID 1729bfc44fcfcb08 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,556 - root - INFO - Label 'UNREAD' added to mail ID 1729bfbc009035aa
+2025-06-01 22:08:10,560 - root - INFO - Label 'READ' removed from mail ID 1729bfbc009035aa
+2025-06-01 22:08:10,601 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1729bfbc009035aa
+2025-06-01 22:08:10,601 - root - INFO - Applied actions for mail ID 1729bfbc009035aa in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,621 - root - INFO - Label 'UNREAD' added to mail ID 1725c3a0399b519f
+2025-06-01 22:08:10,633 - root - INFO - Label 'READ' removed from mail ID 1725c3a0399b519f
+2025-06-01 22:08:10,645 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1725c3a0399b519f
+2025-06-01 22:08:10,646 - root - INFO - Applied actions for mail ID 1725c3a0399b519f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,657 - root - INFO - Label 'UNREAD' added to mail ID 17218face6878117
+2025-06-01 22:08:10,671 - root - INFO - Label 'READ' removed from mail ID 17218face6878117
+2025-06-01 22:08:10,686 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17218face6878117
+2025-06-01 22:08:10,687 - root - INFO - Applied actions for mail ID 17218face6878117 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,702 - root - INFO - Label 'UNREAD' added to mail ID 1714612ae8368759
+2025-06-01 22:08:10,711 - root - INFO - Label 'READ' removed from mail ID 1714612ae8368759
+2025-06-01 22:08:10,724 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1714612ae8368759
+2025-06-01 22:08:10,724 - root - INFO - Applied actions for mail ID 1714612ae8368759 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,728 - root - INFO - Label 'UNREAD' added to mail ID 171e033843b2dbe8
+2025-06-01 22:08:10,731 - root - INFO - Label 'READ' removed from mail ID 171e033843b2dbe8
+2025-06-01 22:08:10,734 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 171e033843b2dbe8
+2025-06-01 22:08:10,734 - root - INFO - Applied actions for mail ID 171e033843b2dbe8 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,737 - root - INFO - Label 'UNREAD' added to mail ID 17112531c8a5061f
+2025-06-01 22:08:10,739 - root - INFO - Label 'READ' removed from mail ID 17112531c8a5061f
+2025-06-01 22:08:10,742 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17112531c8a5061f
+2025-06-01 22:08:10,742 - root - INFO - Applied actions for mail ID 17112531c8a5061f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,746 - root - INFO - Label 'UNREAD' added to mail ID 17112531b09b3682
+2025-06-01 22:08:10,748 - root - INFO - Label 'READ' removed from mail ID 17112531b09b3682
+2025-06-01 22:08:10,751 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17112531b09b3682
+2025-06-01 22:08:10,751 - root - INFO - Applied actions for mail ID 17112531b09b3682 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,753 - root - INFO - Label 'UNREAD' added to mail ID 170eca29a5a78c5f
+2025-06-01 22:08:10,756 - root - INFO - Label 'READ' removed from mail ID 170eca29a5a78c5f
+2025-06-01 22:08:10,761 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 170eca29a5a78c5f
+2025-06-01 22:08:10,761 - root - INFO - Applied actions for mail ID 170eca29a5a78c5f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,772 - root - INFO - Label 'UNREAD' added to mail ID 1706e852c4f71157
+2025-06-01 22:08:10,788 - root - INFO - Label 'READ' removed from mail ID 1706e852c4f71157
+2025-06-01 22:08:10,794 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1706e852c4f71157
+2025-06-01 22:08:10,794 - root - INFO - Applied actions for mail ID 1706e852c4f71157 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,804 - root - INFO - Label 'UNREAD' added to mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:10,812 - root - INFO - Label 'READ' removed from mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:10,822 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16ffaff9d9ab84cf
+2025-06-01 22:08:10,823 - root - INFO - Applied actions for mail ID 16ffaff9d9ab84cf in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,836 - root - INFO - Label 'UNREAD' added to mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:10,845 - root - INFO - Label 'READ' removed from mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:10,859 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 170d8a52fa1b33f5
+2025-06-01 22:08:10,859 - root - INFO - Applied actions for mail ID 170d8a52fa1b33f5 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,884 - root - INFO - Label 'UNREAD' added to mail ID 17028ee221551225
+2025-06-01 22:08:10,896 - root - INFO - Label 'READ' removed from mail ID 17028ee221551225
+2025-06-01 22:08:10,905 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17028ee221551225
+2025-06-01 22:08:10,905 - root - INFO - Applied actions for mail ID 17028ee221551225 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,920 - root - INFO - Label 'UNREAD' added to mail ID 16ff246460f60d6f
+2025-06-01 22:08:10,933 - root - INFO - Label 'READ' removed from mail ID 16ff246460f60d6f
+2025-06-01 22:08:10,945 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16ff246460f60d6f
+2025-06-01 22:08:10,945 - root - INFO - Applied actions for mail ID 16ff246460f60d6f in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,953 - root - INFO - Label 'UNREAD' added to mail ID 16f97cc6757b858b
+2025-06-01 22:08:10,960 - root - INFO - Label 'READ' removed from mail ID 16f97cc6757b858b
+2025-06-01 22:08:10,968 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16f97cc6757b858b
+2025-06-01 22:08:10,969 - root - INFO - Applied actions for mail ID 16f97cc6757b858b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,977 - root - INFO - Label 'UNREAD' added to mail ID 16f92e4721a91160
+2025-06-01 22:08:10,982 - root - INFO - Label 'READ' removed from mail ID 16f92e4721a91160
+2025-06-01 22:08:10,985 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16f92e4721a91160
+2025-06-01 22:08:10,985 - root - INFO - Applied actions for mail ID 16f92e4721a91160 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:10,988 - root - INFO - Label 'UNREAD' added to mail ID 16e506fc40df2621
+2025-06-01 22:08:10,990 - root - INFO - Label 'READ' removed from mail ID 16e506fc40df2621
+2025-06-01 22:08:10,994 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16e506fc40df2621
+2025-06-01 22:08:10,994 - root - INFO - Applied actions for mail ID 16e506fc40df2621 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,000 - root - INFO - Label 'UNREAD' added to mail ID 16d3eb6046eb135b
+2025-06-01 22:08:11,005 - root - INFO - Label 'READ' removed from mail ID 16d3eb6046eb135b
+2025-06-01 22:08:11,010 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16d3eb6046eb135b
+2025-06-01 22:08:11,010 - root - INFO - Applied actions for mail ID 16d3eb6046eb135b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,021 - root - INFO - Label 'UNREAD' added to mail ID 16d3ea83ea771366
+2025-06-01 22:08:11,027 - root - INFO - Label 'READ' removed from mail ID 16d3ea83ea771366
+2025-06-01 22:08:11,033 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16d3ea83ea771366
+2025-06-01 22:08:11,034 - root - INFO - Applied actions for mail ID 16d3ea83ea771366 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,050 - root - INFO - Label 'UNREAD' added to mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:11,069 - root - INFO - Label 'READ' removed from mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:11,084 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16f92e4613f0b4bb
+2025-06-01 22:08:11,085 - root - INFO - Applied actions for mail ID 16f92e4613f0b4bb in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,108 - root - INFO - Label 'UNREAD' added to mail ID 16c86a06ac4548db
+2025-06-01 22:08:11,129 - root - INFO - Label 'READ' removed from mail ID 16c86a06ac4548db
+2025-06-01 22:08:11,139 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16c86a06ac4548db
+2025-06-01 22:08:11,139 - root - INFO - Applied actions for mail ID 16c86a06ac4548db in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,154 - root - INFO - Label 'UNREAD' added to mail ID 16be981eabd61e33
+2025-06-01 22:08:11,168 - root - INFO - Label 'READ' removed from mail ID 16be981eabd61e33
+2025-06-01 22:08:11,181 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16be981eabd61e33
+2025-06-01 22:08:11,182 - root - INFO - Applied actions for mail ID 16be981eabd61e33 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,193 - root - INFO - Label 'UNREAD' added to mail ID 16b9f38d82020dc5
+2025-06-01 22:08:11,201 - root - INFO - Label 'READ' removed from mail ID 16b9f38d82020dc5
+2025-06-01 22:08:11,212 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16b9f38d82020dc5
+2025-06-01 22:08:11,212 - root - INFO - Applied actions for mail ID 16b9f38d82020dc5 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,223 - root - INFO - Label 'UNREAD' added to mail ID 16abd25c249df76b
+2025-06-01 22:08:11,230 - root - INFO - Label 'READ' removed from mail ID 16abd25c249df76b
+2025-06-01 22:08:11,233 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16abd25c249df76b
+2025-06-01 22:08:11,233 - root - INFO - Applied actions for mail ID 16abd25c249df76b in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,241 - root - INFO - Label 'UNREAD' added to mail ID 16ab569ef243a373
+2025-06-01 22:08:11,249 - root - INFO - Label 'READ' removed from mail ID 16ab569ef243a373
+2025-06-01 22:08:11,253 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16ab569ef243a373
+2025-06-01 22:08:11,253 - root - INFO - Applied actions for mail ID 16ab569ef243a373 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,267 - root - INFO - Label 'UNREAD' added to mail ID 16a97a5581351091
+2025-06-01 22:08:11,275 - root - INFO - Label 'READ' removed from mail ID 16a97a5581351091
+2025-06-01 22:08:11,283 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a97a5581351091
+2025-06-01 22:08:11,283 - root - INFO - Applied actions for mail ID 16a97a5581351091 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,294 - root - INFO - Label 'UNREAD' added to mail ID 16a979c54893d3f4
+2025-06-01 22:08:11,300 - root - INFO - Label 'READ' removed from mail ID 16a979c54893d3f4
+2025-06-01 22:08:11,317 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a979c54893d3f4
+2025-06-01 22:08:11,317 - root - INFO - Applied actions for mail ID 16a979c54893d3f4 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,320 - root - INFO - Label 'UNREAD' added to mail ID 16a447ea60abcda0
+2025-06-01 22:08:11,322 - root - INFO - Label 'READ' removed from mail ID 16a447ea60abcda0
+2025-06-01 22:08:11,325 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a447ea60abcda0
+2025-06-01 22:08:11,325 - root - INFO - Applied actions for mail ID 16a447ea60abcda0 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,329 - root - INFO - Label 'UNREAD' added to mail ID 16a408da37abb6a6
+2025-06-01 22:08:11,332 - root - INFO - Label 'READ' removed from mail ID 16a408da37abb6a6
+2025-06-01 22:08:11,335 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a408da37abb6a6
+2025-06-01 22:08:11,335 - root - INFO - Applied actions for mail ID 16a408da37abb6a6 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,337 - root - INFO - Label 'UNREAD' added to mail ID 16a408989efc31d0
+2025-06-01 22:08:11,340 - root - INFO - Label 'READ' removed from mail ID 16a408989efc31d0
+2025-06-01 22:08:11,345 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a408989efc31d0
+2025-06-01 22:08:11,346 - root - INFO - Applied actions for mail ID 16a408989efc31d0 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,349 - root - INFO - Label 'UNREAD' added to mail ID 16a11fc86c07b654
+2025-06-01 22:08:11,352 - root - INFO - Label 'READ' removed from mail ID 16a11fc86c07b654
+2025-06-01 22:08:11,355 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11fc86c07b654
+2025-06-01 22:08:11,355 - root - INFO - Applied actions for mail ID 16a11fc86c07b654 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,359 - root - INFO - Label 'UNREAD' added to mail ID 16a11dfa804b091e
+2025-06-01 22:08:11,364 - root - INFO - Label 'READ' removed from mail ID 16a11dfa804b091e
+2025-06-01 22:08:11,369 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11dfa804b091e
+2025-06-01 22:08:11,369 - root - INFO - Applied actions for mail ID 16a11dfa804b091e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,375 - root - INFO - Label 'UNREAD' added to mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:11,380 - root - INFO - Label 'READ' removed from mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:11,385 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11dcd4c1406f0
+2025-06-01 22:08:11,385 - root - INFO - Applied actions for mail ID 16a11dcd4c1406f0 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,392 - root - INFO - Label 'UNREAD' added to mail ID 16a11db87298e1e6
+2025-06-01 22:08:11,398 - root - INFO - Label 'READ' removed from mail ID 16a11db87298e1e6
+2025-06-01 22:08:11,404 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11db87298e1e6
+2025-06-01 22:08:11,404 - root - INFO - Applied actions for mail ID 16a11db87298e1e6 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,413 - root - INFO - Label 'UNREAD' added to mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:11,422 - root - INFO - Label 'READ' removed from mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:11,442 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11d9dbe7eb8c9
+2025-06-01 22:08:11,442 - root - INFO - Applied actions for mail ID 16a11d9dbe7eb8c9 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,451 - root - INFO - Label 'UNREAD' added to mail ID 16a11d9644c3bdac
+2025-06-01 22:08:11,454 - root - INFO - Label 'READ' removed from mail ID 16a11d9644c3bdac
+2025-06-01 22:08:11,459 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a11d9644c3bdac
+2025-06-01 22:08:11,459 - root - INFO - Applied actions for mail ID 16a11d9644c3bdac in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,465 - root - INFO - Label 'UNREAD' added to mail ID 168e7d825a609ebb
+2025-06-01 22:08:11,468 - root - INFO - Label 'READ' removed from mail ID 168e7d825a609ebb
+2025-06-01 22:08:11,470 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 168e7d825a609ebb
+2025-06-01 22:08:11,470 - root - INFO - Applied actions for mail ID 168e7d825a609ebb in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,474 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:11,480 - root - INFO - Label 'READ' removed from mail ID 1972bef2e886dfef
+2025-06-01 22:08:11,483 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:11,483 - root - INFO - Applied actions for mail ID 1972bef2e886dfef in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,487 - root - INFO - Label 'UNREAD' added to mail ID 1841f7784f623cb2
+2025-06-01 22:08:11,496 - root - INFO - Label 'READ' removed from mail ID 1841f7784f623cb2
+2025-06-01 22:08:11,506 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1841f7784f623cb2
+2025-06-01 22:08:11,510 - root - INFO - Applied actions for mail ID 1841f7784f623cb2 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,519 - root - INFO - Label 'UNREAD' added to mail ID 17ca348639d76883
+2025-06-01 22:08:11,528 - root - INFO - Label 'READ' removed from mail ID 17ca348639d76883
+2025-06-01 22:08:11,534 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 17ca348639d76883
+2025-06-01 22:08:11,534 - root - INFO - Applied actions for mail ID 17ca348639d76883 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,555 - root - INFO - Label 'UNREAD' added to mail ID 168e7d68c8016bd0
+2025-06-01 22:08:11,564 - root - INFO - Label 'READ' removed from mail ID 168e7d68c8016bd0
+2025-06-01 22:08:11,572 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 168e7d68c8016bd0
+2025-06-01 22:08:11,572 - root - INFO - Applied actions for mail ID 168e7d68c8016bd0 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,578 - root - INFO - Label 'UNREAD' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:11,581 - root - INFO - Label 'READ' removed from mail ID 1972c255e2cb0846
+2025-06-01 22:08:11,584 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:11,584 - root - INFO - Applied actions for mail ID 1972c255e2cb0846 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,589 - root - INFO - Label 'UNREAD' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:11,594 - root - INFO - Label 'READ' removed from mail ID 1972c2150a7856e8
+2025-06-01 22:08:11,600 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:11,600 - root - INFO - Applied actions for mail ID 1972c2150a7856e8 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,603 - root - INFO - Label 'UNREAD' added to mail ID 1768dcd51ff524c0
+2025-06-01 22:08:11,610 - root - INFO - Label 'READ' removed from mail ID 1768dcd51ff524c0
+2025-06-01 22:08:11,613 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1768dcd51ff524c0
+2025-06-01 22:08:11,614 - root - INFO - Applied actions for mail ID 1768dcd51ff524c0 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,619 - root - INFO - Label 'UNREAD' added to mail ID 1760f45a88a0a90e
+2025-06-01 22:08:11,622 - root - INFO - Label 'READ' removed from mail ID 1760f45a88a0a90e
+2025-06-01 22:08:11,632 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1760f45a88a0a90e
+2025-06-01 22:08:11,632 - root - INFO - Applied actions for mail ID 1760f45a88a0a90e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,641 - root - INFO - Label 'UNREAD' added to mail ID 175a7e2868995be7
+2025-06-01 22:08:11,646 - root - INFO - Label 'READ' removed from mail ID 175a7e2868995be7
+2025-06-01 22:08:11,656 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 175a7e2868995be7
+2025-06-01 22:08:11,657 - root - INFO - Applied actions for mail ID 175a7e2868995be7 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,666 - root - INFO - Label 'UNREAD' added to mail ID 174bf36cc70769f6
+2025-06-01 22:08:11,671 - root - INFO - Label 'READ' removed from mail ID 174bf36cc70769f6
+2025-06-01 22:08:11,675 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 174bf36cc70769f6
+2025-06-01 22:08:11,675 - root - INFO - Applied actions for mail ID 174bf36cc70769f6 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,697 - root - INFO - Label 'UNREAD' added to mail ID 1723733c14e33286
+2025-06-01 22:08:11,715 - root - INFO - Label 'READ' removed from mail ID 1723733c14e33286
+2025-06-01 22:08:11,727 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1723733c14e33286
+2025-06-01 22:08:11,727 - root - INFO - Applied actions for mail ID 1723733c14e33286 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,741 - root - INFO - Label 'UNREAD' added to mail ID 172845a42a5348ab
+2025-06-01 22:08:11,756 - root - INFO - Label 'READ' removed from mail ID 172845a42a5348ab
+2025-06-01 22:08:11,775 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 172845a42a5348ab
+2025-06-01 22:08:11,775 - root - INFO - Applied actions for mail ID 172845a42a5348ab in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,791 - root - INFO - Label 'UNREAD' added to mail ID 171fe50d4b95bd37
+2025-06-01 22:08:11,805 - root - INFO - Label 'READ' removed from mail ID 171fe50d4b95bd37
+2025-06-01 22:08:11,819 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 171fe50d4b95bd37
+2025-06-01 22:08:11,820 - root - INFO - Applied actions for mail ID 171fe50d4b95bd37 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,841 - root - INFO - Label 'UNREAD' added to mail ID 170eca1a5541a791
+2025-06-01 22:08:11,857 - root - INFO - Label 'READ' removed from mail ID 170eca1a5541a791
+2025-06-01 22:08:11,872 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 170eca1a5541a791
+2025-06-01 22:08:11,872 - root - INFO - Applied actions for mail ID 170eca1a5541a791 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,895 - root - INFO - Label 'UNREAD' added to mail ID 16d38c64a0bc1876
+2025-06-01 22:08:11,905 - root - INFO - Label 'READ' removed from mail ID 16d38c64a0bc1876
+2025-06-01 22:08:11,915 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16d38c64a0bc1876
+2025-06-01 22:08:11,916 - root - INFO - Applied actions for mail ID 16d38c64a0bc1876 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,927 - root - INFO - Label 'UNREAD' added to mail ID 16a6dde2d986b41e
+2025-06-01 22:08:11,936 - root - INFO - Label 'READ' removed from mail ID 16a6dde2d986b41e
+2025-06-01 22:08:11,943 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 16a6dde2d986b41e
+2025-06-01 22:08:11,943 - root - INFO - Applied actions for mail ID 16a6dde2d986b41e in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:11,958 - root - INFO - Label 'UNREAD' added to mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:11,973 - root - INFO - Label 'READ' removed from mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:11,983 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 169c2aadfb7a25e3
+2025-06-01 22:08:11,983 - root - INFO - Applied actions for mail ID 169c2aadfb7a25e3 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:12,006 - root - INFO - Label 'UNREAD' added to mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:12,021 - root - INFO - Label 'READ' removed from mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:12,032 - root - INFO - Label 'SUBJECT_ANY' added to mail ID 1699e02b5f0e5ad3
+2025-06-01 22:08:12,033 - root - INFO - Applied actions for mail ID 1699e02b5f0e5ad3 in rule 'Test SUBJECT conditions'
+2025-06-01 22:08:12,073 - root - INFO - Found 0 mails matching rule 'Test BODY conditions'
+2025-06-01 22:08:12,082 - root - INFO - Found 4 mails matching rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:12,086 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:12,088 - root - INFO - Label 'READ' removed from mail ID 1972bef2a3020303
+2025-06-01 22:08:12,096 - root - INFO - Label 'IMPORTANT' added to mail ID 1972bef2a3020303
+2025-06-01 22:08:12,096 - root - INFO - Applied actions for mail ID 1972bef2a3020303 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:12,102 - root - INFO - Label 'UNREAD' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:12,106 - root - INFO - Label 'READ' removed from mail ID 1972bef2e886dfef
+2025-06-01 22:08:12,112 - root - INFO - Label 'IMPORTANT' added to mail ID 1972bef2e886dfef
+2025-06-01 22:08:12,113 - root - INFO - Applied actions for mail ID 1972bef2e886dfef in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:12,118 - root - INFO - Label 'UNREAD' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:12,122 - root - INFO - Label 'READ' removed from mail ID 1972c255e2cb0846
+2025-06-01 22:08:12,131 - root - INFO - Label 'IMPORTANT' added to mail ID 1972c255e2cb0846
+2025-06-01 22:08:12,132 - root - INFO - Applied actions for mail ID 1972c255e2cb0846 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:12,138 - root - INFO - Label 'UNREAD' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:12,141 - root - INFO - Label 'READ' removed from mail ID 1972c2150a7856e8
+2025-06-01 22:08:12,151 - root - INFO - Label 'IMPORTANT' added to mail ID 1972c2150a7856e8
+2025-06-01 22:08:12,151 - root - INFO - Applied actions for mail ID 1972c2150a7856e8 in rule 'Test RECEIVED_AT conditions'
+2025-06-01 22:08:12,166 - root - INFO - Found 1 mails matching rule 'Test RECEIVED_AT_DELTA conditions'
+2025-06-01 22:08:12,180 - root - INFO - Label 'READ' added to mail ID 1967c332e2373339
+2025-06-01 22:08:12,194 - root - INFO - Label 'UNREAD' removed from mail ID 1967c332e2373339
+2025-06-01 22:08:12,207 - root - INFO - Label 'OLD_EMAILS' added to mail ID 1967c332e2373339
+2025-06-01 22:08:12,207 - root - INFO - Applied actions for mail ID 1967c332e2373339 in rule 'Test RECEIVED_AT_DELTA conditions'
